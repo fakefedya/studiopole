@@ -1,3 +1,3 @@
-export const ServicesPage = () => {
-  return <h1>Это страница услуг</h1>;
-};
+export default function ServicesPage() {
+	return <h1>Это страница услуг</h1>
+}

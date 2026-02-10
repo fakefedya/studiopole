@@ -1,14 +1,9 @@
-import { getProjects } from '@/lib/projects'
+import { HeroSection } from '@/components/sections/home/HeroSection'
 
-export default async function Home() {
-	const projects = await getProjects()
-
+export default function Home() {
 	return (
 		<>
-			<h1>Это домашняя страница</h1>
-			{projects.map((el) => (
-				<span key={el.slug}>{el.title}</span>
-			))}
+			<HeroSection />
 		</>
 	)
 }

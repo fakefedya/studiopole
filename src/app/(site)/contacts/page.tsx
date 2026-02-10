@@ -1,3 +1,3 @@
-export const ContactsPage = () => {
-  return <h1>Это страница контактов</h1>;
-};
+export default function ContactsPage() {
+	return <h1>Это страница контактов</h1>
+}

@@ -1,3 +1,3 @@
-export const AboutPage = () => {
-  return <h1>Это страница о студии</h1>;
-};
+export default function AboutPage() {
+	return <h1>Это страница о студии</h1>
+}

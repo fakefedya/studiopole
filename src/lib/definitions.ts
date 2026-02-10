@@ -3,8 +3,8 @@ import { z } from 'zod'
 export const ImageSchema = z.object({
 	src: z.string().min(1),
 	alt: z.string(),
-	w: z.number().int().positive(), // Ширина обязательна и должна быть > 0
-	h: z.number().int().positive(), // Высота обязательна
+	w: z.number().int().positive(),
+	h: z.number().int().positive(),
 })
 
 export type ProjectImage = z.infer<typeof ImageSchema>
@@ -23,7 +23,7 @@ export const ProjectSchema = z.object({
 	id: z.string(),
 	slug: z.string().min(1),
 	title: z.string().min(1),
-	status: z.enum(['finished', 'in_progress', 'concept']), // Твои новые статусы
+	status: z.enum(['finished', 'in_progress', 'concept']),
 	tags: z.array(z.string()),
 
 	description: z.array(z.string()),
