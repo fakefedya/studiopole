@@ -2,10 +2,9 @@
 	font-size: clamp(2rem, 28cqi, 40rem);
 	font-weight: 500;
 	line-height: 0.8em;
-	letter-spacing: -0.02em;
 	color: var(--color-black);
-
 	text-wrap: balance;
+	letter-spacing: -0.02em;
 }
 
 .h2 {
@@ -13,9 +12,9 @@
 	font-size: clamp(2rem, 28cqi, 40rem);
 	font-weight: 600;
 	line-height: 1.2;
-	letter-spacing: -0.01em;
 	color: var(--color-black);
 	text-wrap: balance;
+	letter-spacing: -0.01em;
 }
 
 .h3 {
@@ -38,21 +37,21 @@
 
 .body {
 	font-size: 1rem; /* 16px */
+	font-weight: 400;
 	line-height: 1.6; /* Читабельный интервал для длинных текстов */
 	color: var(--color-black); /* Или --color-gray-800 для мягкости */
-	font-weight: 400;
 }
 
 .body-large {
 	font-size: 1.25rem; /* 20px - для вступлений (Lead text) */
-	line-height: 1.5;
 	font-weight: 400;
+	line-height: 1.5;
 	color: var(--color-black);
 }
 
 .caption {
 	font-size: 0.875rem; /* 14px */
+	font-weight: 400;
 	line-height: 1.5;
 	color: var(--color-gray-500); /* Серый цвет для подписей */
-	font-weight: 400;
 }

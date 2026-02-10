@@ -1,12 +1,13 @@
 .section {
-	min-height: inherit;
-	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	width: 100%;
+	min-height: inherit;
 }
 
 .heading {
-	text-transform: uppercase;
 	color: var(--black);
+	text-transform: uppercase;
 }

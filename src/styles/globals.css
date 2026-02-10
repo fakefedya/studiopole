@@ -12,8 +12,9 @@ html {
 	font-feature-settings:
 		'pnum' on,
 		'lnum' on;
-	-webkit-text-size-adjust: 100%;
-	text-rendering: optimizeLegibility;
+	text-size-adjust: 100%;
+	text-rendering: optimizelegibility;
+
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -45,7 +46,7 @@ button,
 [type='reset'],
 [type='submit'] {
 	cursor: pointer;
-	-webkit-appearance: button;
+	appearance: auto;
 }
 
 textarea {
@@ -59,13 +60,13 @@ a {
 
 ul,
 ol {
-	list-style: none;
 	padding: 0;
+	list-style: none;
 }
 
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 h1,
@@ -97,23 +98,18 @@ samp {
 	font-size: 1em;
 }
 
-#root,
-#__next {
-	isolation: isolate;
-}
-
 @media (prefers-reduced-motion: reduce) {
 	*,
 	*::before,
 	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
 		animation-duration: 0.01ms !important;
 		animation-iteration-count: 1 !important;
-		transition-duration: 0.01ms !important;
-		scroll-behavior: auto !important;
 	}
 }
 
 :focus-visible {
-	outline: 2px solid currentColor;
+	outline: 2px solid currentcolor;
 	outline-offset: 2px;
 }
