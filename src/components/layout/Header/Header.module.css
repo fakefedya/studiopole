@@ -1,6 +1,7 @@
 .header {
 	position: fixed;
 	top: 0;
+
 	width: 100%;
 	height: auto;
 	padding: 15px 0 0;
@@ -17,88 +18,81 @@
 	grid-template-rows: repeat(1, min-content);
 }
 
+.linkMask {
+	will-change: mask-size;
+
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+
+	overflow: hidden;
+
+	width: 100%;
+	height: 100%;
+	border-radius: 40px;
+	mask-image:
+		linear-gradient(to right, #000, #000), linear-gradient(to left, #000, #000);
+	mask-repeat: no-repeat;
+	mask-position:
+		left center,
+		right center;
+	mask-size: 8px 100%;
+
+	transition: mask-size 0.35s ease;
+
+	&::after {
+		pointer-events: none;
+		content: '';
+
+		position: absolute;
+		inset: 0;
+
+		box-sizing: border-box;
+		border: 1px solid #000;
+		border-radius: inherit;
+	}
+
+	&:hover {
+		mask-size: 51% 100%;
+	}
+}
+
 .navItem {
 	position: relative;
 	height: auto;
-	position: relative;
 	padding: 0 0 0 20px;
 }
 
 .itemLink {
 	position: relative;
-	width: fit-content;
+
+	overflow: hidden;
 	display: flex;
 	gap: 10px;
+
+	width: fit-content;
 	padding: 4px 12px;
 	border-radius: 40px;
-	overflow: hidden;
 
 	&.active {
 		.linkMask {
-			-webkit-mask-size: 51% 100%;
 			mask-size: 51% 100%;
 		}
 	}
 }
 
-.linkMask {
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	border-radius: 40px;
-	overflow: hidden;
-	z-index: 1;
-	will-change: mask-size;
-
-	transition: mask-size 0.35s ease;
-
-	-webkit-mask-image:
-		linear-gradient(to right, #000, #000), linear-gradient(to left, #000, #000);
-	mask-image:
-		linear-gradient(to right, #000, #000), linear-gradient(to left, #000, #000);
-
-	-webkit-mask-position:
-		left center,
-		right center;
-	mask-position:
-		left center,
-		right center;
-
-	-webkit-mask-repeat: no-repeat;
-	mask-repeat: no-repeat;
-
-	-webkit-mask-size: 8px 100%;
-	mask-size: 8px 100%;
-
-	&::after {
-		content: '';
-		position: absolute;
-		inset: 0;
-		border: 1px solid #000;
-		border-radius: inherit;
-		pointer-events: none;
-		box-sizing: border-box;
-	}
-
-	&:hover {
-		-webkit-mask-size: 51% 100%;
-		mask-size: 51% 100%;
-	}
-}
-
 .linkText {
-	outline: none;
 	display: flex;
 	gap: 5px;
+	outline: none;
 }
 
 .text {
 	font-size: 28px;
-	font-style: normal;
 	font-weight: 500;
-	letter-spacing: 0.01em;
+	font-style: normal;
 	line-height: 1.1em;
 	text-transform: uppercase;
+	letter-spacing: 0.01em;
 }
