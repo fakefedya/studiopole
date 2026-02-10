@@ -1,19 +1,32 @@
 import Link from 'next/link'
 
+import { Typography } from '@/components/ui/Typography/Typography'
 import { NAV_LINKS } from '@/lib/constants'
 
 import styles from './Header.module.css'
 
-export const Navigation = () => {
+interface Props {
+	projectsCount: number
+}
+
+export const Navigation = ({ projectsCount }: Props) => {
 	return (
 		<nav className={styles.nav}>
 			<ul className={styles.navList}>
 				{NAV_LINKS.map((el) => (
-					<div key={el.href} className={styles.navItem}>
+					<li key={el.key} className={styles.navItem}>
 						<Link href={el.href} className={styles.itemLink}>
-							{el.label}
+							<div className={styles.linkMask} />
+							<div className={styles.linkText}>
+								<Typography tag={'span'} className={styles.text}>
+									{el.label}
+								</Typography>
+								{el.key === 'projects' && projectsCount > 0 && (
+									<span className={styles.countBadge}>{projectsCount}</span>
+								)}
+							</div>
 						</Link>
-					</div>
+					</li>
 				))}
 			</ul>
 		</nav>
