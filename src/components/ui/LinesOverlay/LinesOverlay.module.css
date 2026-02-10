@@ -1,0 +1,21 @@
+.overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.lines {
+	height: 100%;
+	width: 100%;
+	transform-origin: left bottom;
+
+	background-size: 25.01%;
+	margin-left: -1px;
+	opacity: 0.15;
+	will-change: transform;
+	transform: none;
+
+	background-image: linear-gradient(90deg, rgb(0, 0, 0) 1px, transparent 1px);
+}
