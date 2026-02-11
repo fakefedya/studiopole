@@ -35,7 +35,12 @@ export const Navigation = ({ projectsCount }: Props) => {
 								</Text>
 
 								{el.key === 'projects' && projectsCount > 0 && (
-									<Text as='span' size='sm' weight='semibold'>
+									<Text
+										as='span'
+										size='sm'
+										weight='semibold'
+										className={styles.projectsCount}
+									>
 										{projectsCount}
 									</Text>
 								)}

@@ -23,3 +23,7 @@
 	height: auto;
 	padding: 0 0 0 20px;
 }
+
+.projectsCount {
+	color: var(--orange);
+}

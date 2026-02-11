@@ -1,5 +1,6 @@
 .mask,
 .invertedMask {
+	pointer-events: none;
 	will-change: mask-size;
 
 	position: absolute;
@@ -12,8 +13,6 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 40px;
-
-	pointer-events: none;
 
 	mask-image:
 		linear-gradient(to right, var(--black), var(--black)),
@@ -48,6 +47,7 @@
 
 .capsule {
 	position: relative;
+
 	overflow: hidden;
 	display: flex;
 	gap: 10px;
@@ -75,11 +75,8 @@
 
 .wrapper {
 	display: flex;
-	align-items: flex-start;
 	gap: 5px;
-}
-
-.capsuleText {
+	align-items: flex-start;
+	color: inherit;
 	text-transform: uppercase;
-	color: var(--black);
 }
