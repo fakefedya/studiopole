@@ -1,13 +1,13 @@
-import { Typography } from '@/components/ui/Typography/Typography'
+import { Text } from '@/components/ui/Text/Text'
 
 import styles from './HeroSection.module.css'
 
 export const HeroSection = () => {
 	return (
 		<section className={styles.section}>
-			<Typography tag={'h1'} variant={'h1'} className={styles.heading}>
+			<Text as={'h1'} size={'5xl'}>
 				Pole
-			</Typography>
+			</Text>
 		</section>
 	)
 }

@@ -1,0 +1,61 @@
+.root {
+	text-wrap: balance;
+}
+
+.size-xs {
+	font-size: 0.75rem;
+	line-height: 1.4;
+} /* 12px */
+.size-sm {
+	font-size: 0.875rem;
+	line-height: 1.5;
+} /* 14px */
+.size-base {
+	font-size: 1rem;
+	line-height: 1.6;
+} /* 16px - дефолт */
+.size-lg {
+	font-size: 1.125rem;
+	line-height: 1.5;
+} /* 18px */
+.size-xl {
+	font-size: 1.25rem;
+	line-height: 1.4;
+} /* 20px */
+.size-xxl {
+	font-size: 1.5rem;
+	line-height: 1.4;
+}
+.size-2xl {
+	font-size: clamp(1.5rem, 3vw, 1.75rem);
+	line-height: 1.3;
+} /* 24-28px */
+.size-3xl {
+	font-size: clamp(1.875rem, 4vw, 2.25rem);
+	line-height: 1.2;
+} /* 30-36px */
+.size-4xl {
+	font-size: clamp(2.25rem, 5vw, 3rem);
+	line-height: 1.1;
+} /* 36-48px */
+.size-5xl {
+	font-size: clamp(2rem, 28cqi, 40rem);
+	line-height: 0.8em;
+} /* 32-640px */
+
+.weight-regular {
+	font-weight: 400;
+}
+.weight-medium {
+	font-weight: 500;
+}
+.weight-semibold {
+	font-weight: 600;
+}
+.weight-bold {
+	font-weight: 700;
+}
+
+.default-color {
+	color: var(--black);
+}
