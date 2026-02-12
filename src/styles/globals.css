@@ -12,11 +12,10 @@ html {
 	font-feature-settings:
 		'pnum' on,
 		'lnum' on;
-	text-size-adjust: 100%;
-	text-rendering: optimizelegibility;
-
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
+	text-rendering: optimizelegibility;
 
 	::-webkit-scrollbar {
 		display: none;

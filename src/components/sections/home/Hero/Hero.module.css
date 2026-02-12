@@ -1,7 +1,7 @@
 .heading {
+	z-index: 2;
 	color: var(--white);
 	text-transform: uppercase;
-	z-index: 2;
 }
 
 .container {
@@ -23,8 +23,8 @@
 }
 
 .headingLink {
-	color: var(--white);
 	z-index: 2;
+	color: var(--white);
 }
 
 .logo {
@@ -36,30 +36,36 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 100%;
+
 	width: 100%;
+	height: 100%;
 }
 
 .heroBackgroundWrapper {
-	height: 100%;
-	width: 100%;
 	position: relative;
 	z-index: 1;
+	width: 100%;
+	height: 100%;
 
 	&::after {
 		content: '';
+
 		position: absolute;
 		top: 0;
+
 		width: 100%;
 		height: 100%;
+
 		background-color: #0003;
 	}
 }
 
 .heroBackgroundImage {
 	position: relative;
-	height: 100%;
+
 	width: 100%;
+	height: 100%;
+
 	object-fit: cover;
 	object-position: center;
 }

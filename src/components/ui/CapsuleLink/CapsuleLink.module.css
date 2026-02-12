@@ -12,17 +12,18 @@
 
 	width: 100%;
 	height: 100%;
+
 	border-radius: 40px;
+
+	transition: mask-size 0.35s ease;
 
 	mask-image:
 		linear-gradient(to right, var(--black), var(--black)),
 		linear-gradient(to left, var(--black), var(--black));
-	mask-repeat: no-repeat;
 	mask-position:
 		left center,
 		right center;
-
-	transition: mask-size 0.35s ease;
+	mask-repeat: no-repeat;
 
 	&::after {
 		pointer-events: none;
@@ -32,6 +33,7 @@
 		inset: 0;
 
 		box-sizing: border-box;
+
 		border: 1px solid var(--black);
 		border-radius: inherit;
 	}
@@ -54,9 +56,9 @@
 
 	width: fit-content;
 	padding: 4px 12px;
-	border-radius: 40px;
 
-	background-color: rgba(0, 0, 0, 0);
+	background-color: rgb(0 0 0 / 0%);
+	border-radius: 40px;
 
 	&:hover {
 		.mask {

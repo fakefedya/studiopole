@@ -7,9 +7,9 @@
 	height: auto;
 	padding: 15px 0 0;
 
-	mix-blend-mode: difference;
-	filter: brightness(1.37);
 	opacity: 1;
+	filter: brightness(1.37);
+	mix-blend-mode: difference;
 }
 
 .nav {
