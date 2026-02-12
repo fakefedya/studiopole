@@ -1,0 +1,83 @@
+.root {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9; /* Или 4/3, зависит от твоих фото */
+	border-radius: var(--radius-md);
+	overflow: hidden;
+	background-color: var(--color-gray-100); /* Плейсхолдер пока грузится */
+}
+
+.slider {
+	width: 100%;
+	height: 100%;
+}
+
+.imageWrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.image {
+	object-fit: cover;
+}
+
+/* --- СТИЛИ ПОЛЗУНКА (HANDLE) --- */
+.handle {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: var(--color-white);
+	cursor: col-resize; /* Курсор изменения ширины */
+}
+
+.line {
+	width: 2px;
+	height: 100%;
+	background-color: var(--color-white);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.button {
+	position: absolute; /* По центру линии */
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--color-white);
+	color: var(--color-black);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease;
+}
+
+/* Эффект нажатия */
+.handle:active .button {
+	transform: translate(-50%, -50%) scale(0.9);
+}
+
+/* --- ЛЕЙБЛЫ (До/После) --- */
+.label {
+	position: absolute;
+	top: 20px;
+	padding: 4px 12px;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+	color: white;
+	pointer-events: none; /* Чтобы не мешали кликать */
+	backdrop-filter: blur(4px);
+}
+
+.labelBefore {
+	left: 20px;
+}
+.labelAfter {
+	right: 20px;
+}
