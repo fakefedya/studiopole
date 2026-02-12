@@ -28,7 +28,7 @@
 	height: 400%;
 
 	opacity: 0.9;
-	background-image: url('/images/test.png');
+	background-image: url('/images/noise.png');
 
 	animation: noise-animation 5s steps(6) infinite;
 }
