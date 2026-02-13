@@ -7,7 +7,7 @@ import { IBM_Plex_Sans } from 'next/font/google'
 import { Footer } from '@/components/layout/Footer/Footer'
 import { Header } from '@/components/layout/Header/Header'
 import { Main } from '@/components/layout/Main/Main'
-import { LinesOverlay } from '@/components/ui/LinesOverlay/LinesOverlay'
+import { Lines } from '@/components/ui/Lines/Lines'
 import { Noise } from '@/components/ui/Noise/Noise'
 
 import styles from './layout.module.css'
@@ -30,7 +30,7 @@ export default function RootLayout({
 		<html lang='ru'>
 			<body className={fontIBM.className}>
 				<div className={styles.app}>
-					<LinesOverlay />
+					<Lines />
 					<Noise />
 					<Header />
 					<Main>{children}</Main>

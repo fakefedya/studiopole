@@ -31,25 +31,25 @@ export const BeforeAfter = ({
 						<div className={styles.line} />
 						<div className={styles.button}>
 							<svg
-								width='15'
-								height='15'
+								xmlns='http://www.w3.org/2000/svg'
+								width={24}
+								height={24}
 								viewBox='0 0 24 24'
 								fill='none'
 								stroke='currentColor'
-								strokeWidth='2'
+								strokeWidth={2}
 								strokeLinecap='round'
 								strokeLinejoin='round'
 							>
-								<path d='M18 8L22 12L18 16' />
-								<path d='M6 8L2 12L6 16' />
+								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+								<path d='M8 9l4 -4l4 4' />
+								<path d='M16 15l-4 4l-4 -4' />
 							</svg>
 						</div>
 					</div>
 				}
-				// Левая картинка (Before)
 				itemOne={
 					<div className={styles.imageWrapper}>
-						{/* Используем Next.js Image для оптимизации */}
 						<Image
 							src={beforeSrc}
 							alt={beforeAlt}
@@ -64,7 +64,6 @@ export const BeforeAfter = ({
 						</div>
 					</div>
 				}
-				// Правая картинка (After)
 				itemTwo={
 					<div className={styles.imageWrapper}>
 						<Image

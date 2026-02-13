@@ -1,10 +1,10 @@
-import styles from './LinesOverlay.module.css'
+import styles from './Lines.module.css'
 
 interface Props {
 	isVisible?: true | false
 }
 
-export const LinesOverlay = ({ isVisible = true }: Props) => {
+export const Lines = ({ isVisible = true }: Props) => {
 	if (!isVisible) return
 
 	return (

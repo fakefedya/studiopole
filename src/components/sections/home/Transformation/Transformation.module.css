@@ -1,0 +1,13 @@
+.root {
+	width: 100%;
+	max-width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 50px;
+}
+
+.heading {
+	color: var(--black);
+	text-transform: uppercase;
+}
