@@ -23,12 +23,12 @@ html {
 }
 
 body {
+	min-height: 100vh;
 	font-family:
 		var(--font-rubik),
 		system-ui,
 		-apple-system,
 		sans-serif;
-	min-height: 100vh;
 	line-height: 1.5;
 }
 
