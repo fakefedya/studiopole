@@ -55,6 +55,7 @@
 }
 
 .headingWrapper {
+	width: 100%;
 	position: relative;
 
 	display: flex;
@@ -69,6 +70,7 @@
 }
 
 .headingContainer {
+	height: 350px;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -77,9 +79,21 @@
 	display: flex;
 	gap: 15px;
 	align-items: center;
+}
 
-	svg {
-		width: auto;
-		height: 200px;
-	}
+.logo {
+	width: auto;
+	height: 200px;
+}
+
+.logoIcon {
+	height: 350px;
+	width: auto;
+	fill: var(--beige);
+}
+
+.letterWrapper {
+	display: flex;
+	align-items: center;
+	gap: 25px;
 }

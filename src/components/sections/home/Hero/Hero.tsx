@@ -1,8 +1,12 @@
 import Image from 'next/image'
 
+import IconE from '@/components/icons/iconE.svg'
+import IconL from '@/components/icons/iconL.svg'
+import IconO from '@/components/icons/iconO.svg'
+import IconP from '@/components/icons/iconP.svg'
 import Icon from '@/components/icons/logo.svg'
 import { Section } from '@/components/layout/Section/Section'
-import { Text } from '@/components/ui/Text/Text'
+// import { Text } from '@/components/ui/Text/Text'
 
 import styles from './Hero.module.css'
 
@@ -14,30 +18,39 @@ export const Hero = () => {
 					<div className={styles.backgroundWrapper}>
 						<Image
 							className={styles.image}
-							src={'/images/projects/zolotaya-rosha/cover.jpg'}
+							src={'/images/home-background.jpg'}
 							alt={'opiuj'}
-							width={2768}
-							height={2400}
+							width={1080}
+							height={1920}
 						/>
 					</div>
 				</div>
 				<div className={styles.heading}>
 					<div className={styles.headingWrapper}>
-						<Text as={'span'} size={'5xl'} weight={'medium'}>
-							P
-						</Text>
-						<div className={styles.headingContainer}>
-							<Text as={'span'} size={'5xl'} weight={'medium'}>
-								O
-							</Text>
-							<Icon />
-							<Text as={'span'} size={'5xl'} weight={'medium'}>
-								L
-							</Text>
+						<div className={styles.letterWrapper}>
+							<IconP className={styles.logoIcon} />
+							<IconO className={styles.logoIcon} />
 						</div>
-						<Text as={'span'} size={'5xl'} weight={'medium'}>
+						{/* <Text as={'span'} size={'5xl'} weight={'medium'}>
+							P
+							</Text> */}
+						<div className={styles.headingContainer}>
+							{/* <Text as={'span'} size={'5xl'} weight={'medium'}>
+								O
+							</Text> */}
+							<Icon className={styles.logo} />
+							{/* <Text as={'span'} size={'5xl'} weight={'medium'}>
+								L
+							</Text> */}
+						</div>
+						<div className={styles.letterWrapper}>
+							<IconL className={styles.logoIcon} />
+
+							<IconE className={styles.logoIcon} />
+						</div>
+						{/* <Text as={'span'} size={'5xl'} weight={'medium'}>
 							E
-						</Text>
+						</Text> */}
 					</div>
 				</div>
 			</div>
