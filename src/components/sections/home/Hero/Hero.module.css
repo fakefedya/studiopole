@@ -55,13 +55,11 @@
 }
 
 .headingWrapper {
-	width: 100%;
 	position: relative;
 
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 	width: 100%;
 	padding: 0 0 48px;
 
@@ -70,7 +68,6 @@
 }
 
 .headingContainer {
-	height: 350px;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -79,6 +76,8 @@
 	display: flex;
 	gap: 15px;
 	align-items: center;
+
+	height: 350px;
 }
 
 .logo {
@@ -87,13 +86,13 @@
 }
 
 .logoIcon {
-	height: 350px;
 	width: auto;
+	height: 350px;
 	fill: var(--beige);
 }
 
 .letterWrapper {
 	display: flex;
-	align-items: center;
 	gap: 25px;
+	align-items: center;
 }
