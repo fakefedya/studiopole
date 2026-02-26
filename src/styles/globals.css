@@ -25,7 +25,7 @@ html {
 body {
 	min-height: 100vh;
 	font-family:
-		var(--font-velaSans),
+		var(--font-vela-sans),
 		system-ui,
 		-apple-system,
 		sans-serif;

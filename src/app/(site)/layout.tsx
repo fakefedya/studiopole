@@ -24,7 +24,7 @@ const bounded = localFont({
 
 const velaSans = localFont({
 	src: '../fonts/VelaSans-GX.ttf',
-	variable: '--font-velaSans',
+	variable: '--font-vela-sans',
 })
 
 export default function RootLayout({
