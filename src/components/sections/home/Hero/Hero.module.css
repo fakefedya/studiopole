@@ -60,24 +60,23 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	width: 100%;
 	padding: 0 0 48px;
 
-	font-family: var(--font-oswald);
+	font-family: var(--font-bounded);
 	color: var(--beige);
 }
 
 .headingContainer {
 	position: absolute;
-	top: 0;
+	top: 50%;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translate(-50%, -50%);
 
 	display: flex;
 	gap: 15px;
 	align-items: center;
-
-	height: 350px;
 }
 
 .logo {
@@ -95,4 +94,10 @@
 	display: flex;
 	gap: 25px;
 	align-items: center;
+}
+
+.headingText {
+	display: flex;
+	align-items: center;
+	gap: 5%;
 }

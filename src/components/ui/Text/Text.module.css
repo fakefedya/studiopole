@@ -40,7 +40,7 @@
 	line-height: 1.1;
 } /* 36-48px */
 .size-5xl {
-	font-size: clamp(2rem, 28cqi, 40rem);
+	font-size: clamp(2rem, 22cqi, 40rem);
 	line-height: 0.8em;
 } /* 32-640px */
 

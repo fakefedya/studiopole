@@ -25,7 +25,7 @@ html {
 body {
 	min-height: 100vh;
 	font-family:
-		var(--font-rubik),
+		var(--font-velaSans),
 		system-ui,
 		-apple-system,
 		sans-serif;
@@ -84,7 +84,7 @@ h4,
 h5,
 h6 {
 	font: inherit;
-	font-family: var(--font-oswald), 'Arial Narrow', sans-serif;
+	font-family: var(--font-bounded), 'Arial Narrow', sans-serif;
 }
 
 p,
