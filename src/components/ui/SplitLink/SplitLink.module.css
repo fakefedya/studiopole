@@ -5,9 +5,9 @@
 }
 
 .split {
-	display: block;
 	position: relative;
 	overflow: hidden;
+	display: block;
 }
 
 .line {
