@@ -14,10 +14,11 @@ export const Hero = () => {
 					<div className={styles.backgroundWrapper}>
 						<Image
 							className={styles.image}
-							src={'/images/home-background.jpg'}
+							src={'/images/hero-background.jpg'}
 							alt={'opiuj'}
-							width={1080}
-							height={1920}
+							width={1920}
+							height={2560}
+							quality={100}
 						/>
 					</div>
 				</div>

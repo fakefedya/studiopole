@@ -2,8 +2,9 @@
 
 import { usePathname } from 'next/navigation'
 
-import { CapsuleLink } from '@/components/ui/CapsuleLink/CapsuleLink'
+import { SplitLink } from '@/components/ui/SplitLink/SplitLink'
 import { Text } from '@/components/ui/Text/Text'
+import { cn } from '@/lib/cn'
 import { NAV_LINKS } from '@/lib/constants'
 
 import styles from './Header.module.css'
@@ -24,12 +25,12 @@ export const Navigation = ({ projectsCount }: Props) => {
 
 					return (
 						<li key={el.key} className={styles.navItem}>
-							<CapsuleLink isActive={isActive} href={el.href}>
+							<SplitLink isActive={isActive} href={el.href}>
 								<Text
 									as='span'
 									size='xxl'
 									weight='medium'
-									className={styles.capsuleText}
+									className={cn(styles['line'], styles['normal'])}
 								>
 									{el.label}
 								</Text>
@@ -44,7 +45,7 @@ export const Navigation = ({ projectsCount }: Props) => {
 										{projectsCount}
 									</Text>
 								)}
-							</CapsuleLink>
+							</SplitLink>
 						</li>
 					)
 				})}
