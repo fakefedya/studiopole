@@ -1,3 +1,20 @@
+.line {
+	position: relative;
+
+	overflow: hidden;
+	display: flex;
+	gap: 0.5rem;
+
+	transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+
+	&.hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(110%);
+	}
+}
+
 .root {
 	position: relative;
 	overflow: hidden;
@@ -15,20 +32,5 @@
 
 	&.active {
 		color: var(--orange);
-	}
-}
-
-.line {
-	display: flex;
-	gap: 0.5rem;
-	position: relative;
-	overflow: hidden;
-	transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-
-	&.hover {
-		position: absolute;
-		top: 0;
-		left: 0;
-		transform: translateY(110%);
 	}
 }
