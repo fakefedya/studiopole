@@ -27,9 +27,13 @@ export const Nav = ({ projectsCount }: Props) => {
 						<li key={el.key} className={styles.item}>
 							<Link href={el.href} className={styles.link}>
 								<SplitText isActive={isActive}>
-									{el.label}
+									<Text as={'span'} size={'xl'} weight={'medium'}>
+										{el.label}
+									</Text>
 									{el.key === 'projects' && projectsCount > 0 && (
-										<Text as={'span'}>{projectsCount}</Text>
+										<Text as={'span'} size={'base'} weight={'medium'}>
+											{projectsCount}
+										</Text>
 									)}
 								</SplitText>
 							</Link>

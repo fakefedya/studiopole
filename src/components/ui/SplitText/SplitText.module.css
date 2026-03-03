@@ -3,7 +3,8 @@
 
 	overflow: hidden;
 	display: flex;
-	gap: 0.5rem;
+	align-items: flex-start;
+	gap: 0.05rem;
 
 	transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 

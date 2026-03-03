@@ -31,7 +31,7 @@ export const FontScaler = ({ isFullScreen = false }: FontScalerProps) => {
 
 		document.documentElement.style.setProperty('font-size', `${safeFontSize}px`)
 
-		window.dispatchEvent(new CustomEvent('spa-resize', { detail: { scale } }))
+		window.dispatchEvent(new CustomEvent('font-resize', { detail: { scale } }))
 	}, [isFullScreen])
 
 	useEffect(() => {

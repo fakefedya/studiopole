@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import Logo from '@/components/icons/logo.svg'
 import { getProjects } from '@/lib/projects'
 
@@ -11,8 +13,12 @@ export const Header = async () => {
 
 	return (
 		<header className={styles.root}>
-			<div className={styles.container}>
-				<Logo className={styles.logo} />
+			<div className={styles.wrapper}>
+				<div className={styles.logo}>
+					<Link href={'/'}>
+						<Logo className={styles.icon} />
+					</Link>
+				</div>
 				<Nav projectsCount={projectsCount} />
 			</div>
 		</header>

@@ -1,4 +1,6 @@
 .root {
+	height: 100%;
+	max-height: 0.85rem;
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -7,14 +9,25 @@
 	height: auto;
 }
 
-.container {
+.wrapper {
+	height: 100%;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
-	padding: 2rem;
+	padding: 0.4rem;
 }
 
 .logo {
+	background: #ffffff40;
+	backdrop-filter: blur(1.2rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 0.06rem;
+	padding: 0.12rem;
+}
+
+.icon {
+	height: 0.65rem;
 	width: auto;
-	height: 4rem;
 }
