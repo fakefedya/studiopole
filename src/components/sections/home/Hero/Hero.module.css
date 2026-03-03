@@ -24,7 +24,7 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	border-radius: 0.06rem;
+	border-radius: 0.04rem;
 	overflow: hidden;
 
 	&::after {
@@ -36,7 +36,7 @@
 		width: 100%;
 		height: 100%;
 
-		opacity: 0.35;
+		opacity: 0.2;
 
 		background: linear-gradient(#0000 0%, #000 34.9539%);
 	}
@@ -51,14 +51,14 @@
 }
 
 .heading {
+	padding: 0.4rem;
+	position: relative;
 	width: 100%;
 	z-index: 1;
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.02rem;
+	/* justify-content: space-between; */
 
 	color: var(--beige);
-}
-
-.letter {
-	text-transform: uppercase;
 }

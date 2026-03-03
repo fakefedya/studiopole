@@ -13,21 +13,24 @@
 	height: 100%;
 	display: flex;
 	align-items: flex-start;
-	justify-content: space-between;
+	justify-content: flex-end;
+	gap: 0.05rem;
 	padding: 0.4rem;
 }
 
 .logo {
-	background: #ffffff40;
+	height: 0.7rem;
+	width: 0.7rem;
+	background: #908c8766;
 	backdrop-filter: blur(1.2rem);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 0.06rem;
+	border-radius: 0.04rem;
 	padding: 0.12rem;
 }
 
 .icon {
-	height: 0.65rem;
+	height: 0.45rem;
 	width: auto;
 }

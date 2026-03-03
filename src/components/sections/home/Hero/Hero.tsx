@@ -13,55 +13,34 @@ export const Hero = () => {
 					<div className={styles.imageWrapper}>
 						<Image
 							className={styles.image}
-							src={'/images/hero-background-1.jpg'}
+							src={'/images/hero-background_1.jpg'}
 							alt={'opiuj'}
-							width={3492}
-							height={4652}
+							width={2584}
+							height={2530}
 						/>
 					</div>{' '}
 					<div className={styles.imageWrapper}>
 						<Image
 							className={styles.image}
-							src={'/images/hero-background-2.jpg'}
+							src={'/images/hero-background_2.jpg'}
 							alt={'opiuj'}
-							width={3755}
-							height={5007}
+							width={2532}
+							height={2530}
 						/>
 					</div>
 				</div>
 				<div className={styles.heading}>
-					<Text
-						className={styles.letter}
-						as={'h1'}
-						size={'5xl'}
-						weight={'medium'}
-					>
-						P
-					</Text>
-					<Text
-						className={styles.letter}
-						as={'h1'}
-						size={'5xl'}
-						weight={'medium'}
-					>
-						O
-					</Text>
-					<Text
-						className={styles.letter}
-						as={'h1'}
-						size={'5xl'}
-						weight={'medium'}
-					>
-						L
-					</Text>
-					<Text
-						className={styles.letter}
-						as={'h1'}
-						size={'5xl'}
-						weight={'medium'}
-					>
-						E
-					</Text>
+					<div className={styles.letterWrapper}>
+						<Text
+							className={styles.letter}
+							as={'h1'}
+							size={'5xl'}
+							weight={'medium'}
+						>
+							POLE
+						</Text>
+					</div>
+					<div className={styles.letterWrapper}></div>
 				</div>
 			</div>
 		</Section>
