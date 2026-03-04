@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import Logo from '@/components/icons/logo.svg'
-import { SplitText } from '@/components/ui/SplitText/SplitText'
+import { SplitEffect } from '@/components/ui/SplitEffect/SplitEffect'
 import { getProjects } from '@/lib/projects'
 
 import { Nav } from '../Nav/Nav'
@@ -16,9 +16,9 @@ export const Header = async () => {
 		<header className={styles.root}>
 			<div className={styles.container}>
 				<Link href={'/'} className={styles.logo}>
-					<SplitText className={styles.splitWrapper}>
+					<SplitEffect className={styles.splitWrapper}>
 						<Logo className={styles.icon} />
-					</SplitText>
+					</SplitEffect>
 				</Link>
 				<Nav projectsCount={projectsCount} />
 			</div>

@@ -18,7 +18,7 @@ type TextSize =
 	| '5xl'
 type TextWeight = 'regular' | 'medium' | 'semibold' | 'bold'
 
-interface TextProps extends HTMLAttributes<HTMLElement> {
+interface Props extends HTMLAttributes<HTMLElement> {
 	as?: ElementType
 	size?: TextSize
 	weight?: TextWeight
@@ -33,7 +33,7 @@ export const Text = ({
 	children,
 	className,
 	...props
-}: TextProps) => {
+}: Props) => {
 	return (
 		<Tag
 			className={cn(

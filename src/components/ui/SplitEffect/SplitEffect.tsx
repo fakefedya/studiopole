@@ -2,7 +2,7 @@ import { HTMLAttributes, ReactNode } from 'react'
 
 import { cn } from '@/lib/cn'
 
-import styles from './SplitText.module.css'
+import styles from './SplitEffect.module.css'
 
 interface Props extends HTMLAttributes<HTMLElement> {
 	children: ReactNode
@@ -10,7 +10,7 @@ interface Props extends HTMLAttributes<HTMLElement> {
 	isActive?: boolean
 }
 
-export const SplitText = ({
+export const SplitEffect = ({
 	className,
 	children,
 	isActive = false,

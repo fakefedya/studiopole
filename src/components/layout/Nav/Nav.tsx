@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import { SplitText } from '@/components/ui/SplitText/SplitText'
+import { SplitEffect } from '@/components/ui/SplitEffect/SplitEffect'
 import { Text } from '@/components/ui/Text/Text'
 import { NAV_LINKS } from '@/lib/constants'
 
@@ -25,7 +25,7 @@ export const Nav = ({ projectsCount }: Props) => {
 
 					return (
 						<Link key={el.key} href={el.href} className={styles.item}>
-							<SplitText className={styles.split} isActive={isActive}>
+							<SplitEffect className={styles.split} isActive={isActive}>
 								<Text as={'span'} size={'lg'} weight={'medium'}>
 									{el.label}
 								</Text>
@@ -39,7 +39,7 @@ export const Nav = ({ projectsCount }: Props) => {
 										{projectsCount}
 									</Text>
 								)}
-							</SplitText>
+							</SplitEffect>
 						</Link>
 					)
 				})}
