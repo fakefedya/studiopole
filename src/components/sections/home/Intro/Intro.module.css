@@ -1,11 +1,17 @@
-.wrapper {
+.container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	width: 100%;
-	max-width: 45%;
+	height: 100vh;
 
 	text-align: center;
-	text-transform: uppercase;
+}
+
+.text {
+	position: relative;
+	width: 100%;
+	max-width: 55%;
+	color: var(--c-black);
 }

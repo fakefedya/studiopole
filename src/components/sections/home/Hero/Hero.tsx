@@ -9,8 +9,8 @@ export const Hero = () => {
 	return (
 		<Section className={'wide'}>
 			<div className={styles.root}>
-				<div className={styles.wrapper}>
-					<div className={styles.imageWrapper}>
+				<div className={styles.background}>
+					<div className={styles.backgroundWrapper}>
 						<Image
 							className={styles.image}
 							src={'/images/hero-background_1.jpg'}
@@ -19,7 +19,7 @@ export const Hero = () => {
 							height={2530}
 						/>
 					</div>{' '}
-					<div className={styles.imageWrapper}>
+					<div className={styles.backgroundWrapper}>
 						<Image
 							className={styles.image}
 							src={'/images/hero-background_2.jpg'}
@@ -29,18 +29,20 @@ export const Hero = () => {
 						/>
 					</div>
 				</div>
-				<div className={styles.heading}>
-					<div className={styles.letterWrapper}>
-						<Text
-							className={styles.letter}
-							as={'h1'}
-							size={'5xl'}
-							weight={'medium'}
-						>
-							POLE
+				<div className={styles.text}>
+					<div className={styles.title}>
+						<Text as={'h1'} weight={'medium'} size={'5xl'}>
+							Авторская студия POLE
 						</Text>
 					</div>
-					<div className={styles.letterWrapper}></div>
+					<div className={styles.description}>
+						<Text as={'p'} weight={'medium'} size={'3xl'}>
+							Интерьер — это не стены.
+						</Text>
+						<Text as={'p'} weight={'medium'} size={'3xl'}>
+							Это сценарий жизни.
+						</Text>
+					</div>
 				</div>
 			</div>
 		</Section>

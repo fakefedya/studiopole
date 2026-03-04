@@ -1,5 +1,5 @@
 .app {
 	position: relative;
 	min-height: inherit;
-	background: var(--beige);
+	background: var(--c-beige);
 }

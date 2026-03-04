@@ -1,6 +1,10 @@
 :root {
-	--black: #2f2f2f;
-	--white: #fff;
-	--beige: #f2f1ef;
-	--orange: #ff7c08;
+	--c-black: #111;
+	--c-white: #fff;
+	--c-beige: #f2f1ef;
+	--c-nav: #908c8766;
+	--c-orange: #ff7c08;
+
+	--header-height: 0.7rem;
+	--ease: cubic-bezier(0.16, 1, 0.3, 1);
 }

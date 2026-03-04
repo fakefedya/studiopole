@@ -10,9 +10,17 @@ interface Props extends HTMLAttributes<HTMLElement> {
 	isActive?: boolean
 }
 
-export const SplitText = ({ children, isActive = false, ...props }: Props) => {
+export const SplitText = ({
+	className,
+	children,
+	isActive = false,
+	...props
+}: Props) => {
 	return (
-		<div className={cn(styles.root, isActive && styles.active)} {...props}>
+		<div
+			className={cn(className, styles.root, isActive && styles.active)}
+			{...props}
+		>
 			<div className={cn(styles.line, styles.normal)}>{children}</div>
 			<div className={cn(styles.line, styles.hover)}>{children}</div>
 		</div>

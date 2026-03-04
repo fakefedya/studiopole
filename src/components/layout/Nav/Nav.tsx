@@ -18,29 +18,32 @@ export const Nav = ({ projectsCount }: Props) => {
 
 	return (
 		<nav className={styles.root}>
-			<ul className={styles.list}>
+			<div className={styles.list}>
 				{NAV_LINKS.map((el) => {
 					const isActive =
 						pathname === el.href || pathname.startsWith(`${el.href}/`)
 
 					return (
-						<li key={el.key} className={styles.item}>
-							<Link href={el.href} className={styles.link}>
-								<SplitText isActive={isActive}>
-									<Text as={'span'} size={'xl'} weight={'medium'}>
-										{el.label}
+						<Link key={el.key} href={el.href} className={styles.item}>
+							<SplitText className={styles.split} isActive={isActive}>
+								<Text as={'span'} size={'lg'} weight={'medium'}>
+									{el.label}
+								</Text>
+								{el.key === 'projects' && projectsCount > 0 && (
+									<Text
+										className={styles.projectsCount}
+										as={'span'}
+										size={'sm'}
+										weight={'medium'}
+									>
+										{projectsCount}
 									</Text>
-									{el.key === 'projects' && projectsCount > 0 && (
-										<Text as={'span'} size={'base'} weight={'medium'}>
-											{projectsCount}
-										</Text>
-									)}
-								</SplitText>
-							</Link>
-						</li>
+								)}
+							</SplitText>
+						</Link>
 					)
 				})}
-			</ul>
+			</div>
 		</nav>
 	)
 }

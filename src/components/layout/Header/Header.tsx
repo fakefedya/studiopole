@@ -14,14 +14,12 @@ export const Header = async () => {
 
 	return (
 		<header className={styles.root}>
-			<div className={styles.wrapper}>
-				<div className={styles.logo}>
-					<Link href={'/'}>
-						<SplitText>
-							<Logo className={styles.icon} />
-						</SplitText>
-					</Link>
-				</div>
+			<div className={styles.container}>
+				<Link href={'/'} className={styles.logo}>
+					<SplitText className={styles.splitWrapper}>
+						<Logo className={styles.icon} />
+					</SplitText>
+				</Link>
 				<Nav projectsCount={projectsCount} />
 			</div>
 		</header>
