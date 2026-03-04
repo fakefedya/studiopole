@@ -6,7 +6,7 @@ import styles from './Transformation.module.css'
 
 export const Transformation = () => {
 	return (
-		<Section>
+		<Section className='wide'>
 			<div className={styles.root}>
 				<Text
 					as={'h2'}
