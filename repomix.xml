@@ -1,0 +1,3227 @@
+This file is a merged representation of a subset of the codebase, containing files not matching ignore patterns, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching these patterns are excluded: **/node_modules/**
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+.husky/pre-commit
+.prettierrc.mjs
+eslint.config.mjs
+next.config.ts
+package.json
+public/images/hero-background_1.jpg
+public/images/hero-background_2.jpg
+public/images/hero-background-12.jpg
+public/images/hero-background-22.jpg
+public/images/noise.png
+public/images/projects/chernaya-rechka-41/1.jpg
+public/images/projects/chernaya-rechka-41/10.jpg
+public/images/projects/chernaya-rechka-41/11.jpg
+public/images/projects/chernaya-rechka-41/12.jpg
+public/images/projects/chernaya-rechka-41/2.jpg
+public/images/projects/chernaya-rechka-41/3.jpg
+public/images/projects/chernaya-rechka-41/4.jpg
+public/images/projects/chernaya-rechka-41/5.jpg
+public/images/projects/chernaya-rechka-41/6.jpg
+public/images/projects/chernaya-rechka-41/7.jpg
+public/images/projects/chernaya-rechka-41/8.jpg
+public/images/projects/chernaya-rechka-41/9.jpg
+public/images/projects/chernaya-rechka-41/cover.jpg
+public/images/projects/cube/1.jpg
+public/images/projects/cube/10.jpg
+public/images/projects/cube/2.jpg
+public/images/projects/cube/3.jpg
+public/images/projects/cube/4.jpg
+public/images/projects/cube/5.jpg
+public/images/projects/cube/6.jpg
+public/images/projects/cube/7.jpg
+public/images/projects/cube/8.jpg
+public/images/projects/cube/9.jpg
+public/images/projects/cube/cover.jpg
+public/images/projects/kamysh/1.jpg
+public/images/projects/kamysh/10.jpg
+public/images/projects/kamysh/2.jpg
+public/images/projects/kamysh/3.jpg
+public/images/projects/kamysh/4.jpg
+public/images/projects/kamysh/5.jpg
+public/images/projects/kamysh/6.jpg
+public/images/projects/kamysh/7.jpg
+public/images/projects/kamysh/8.jpg
+public/images/projects/kamysh/9.jpg
+public/images/projects/kamysh/cover.jpg
+public/images/projects/leontievsky-mys/1.jpg
+public/images/projects/leontievsky-mys/10.jpg
+public/images/projects/leontievsky-mys/11.jpg
+public/images/projects/leontievsky-mys/2.jpg
+public/images/projects/leontievsky-mys/3.jpg
+public/images/projects/leontievsky-mys/4.jpg
+public/images/projects/leontievsky-mys/5.jpg
+public/images/projects/leontievsky-mys/6.png
+public/images/projects/leontievsky-mys/7.png
+public/images/projects/leontievsky-mys/8.png
+public/images/projects/leontievsky-mys/9.png
+public/images/projects/leontievsky-mys/cover.jpg
+public/images/projects/mussel-story/1.png
+public/images/projects/mussel-story/2.png
+public/images/projects/mussel-story/3.png
+public/images/projects/mussel-story/4.png
+public/images/projects/mussel-story/5.png
+public/images/projects/mussel-story/6.jpg
+public/images/projects/mussel-story/7.jpg
+public/images/projects/mussel-story/cover.png
+public/images/projects/primorsky/1.jpg
+public/images/projects/primorsky/10.jpg
+public/images/projects/primorsky/11.jpg
+public/images/projects/primorsky/12.jpg
+public/images/projects/primorsky/13.jpg
+public/images/projects/primorsky/14.jpg
+public/images/projects/primorsky/2.jpg
+public/images/projects/primorsky/3.jpg
+public/images/projects/primorsky/4.jpg
+public/images/projects/primorsky/5.jpg
+public/images/projects/primorsky/7.jpg
+public/images/projects/primorsky/8.jpg
+public/images/projects/primorsky/9.jpg
+public/images/projects/primorsky/cover.jpg
+public/images/projects/yasniy/1.jpg
+public/images/projects/yasniy/10.jpg
+public/images/projects/yasniy/11.jpg
+public/images/projects/yasniy/12.jpg
+public/images/projects/yasniy/2.jpg
+public/images/projects/yasniy/3.jpg
+public/images/projects/yasniy/4.jpg
+public/images/projects/yasniy/5.jpg
+public/images/projects/yasniy/6.jpg
+public/images/projects/yasniy/7.jpg
+public/images/projects/yasniy/8.jpg
+public/images/projects/yasniy/9.jpg
+public/images/projects/yasniy/cover.jpg
+public/images/projects/zolotaya-rosha/1.jpg
+public/images/projects/zolotaya-rosha/10.jpg
+public/images/projects/zolotaya-rosha/11.jpg
+public/images/projects/zolotaya-rosha/12.jpg
+public/images/projects/zolotaya-rosha/13.jpg
+public/images/projects/zolotaya-rosha/14.jpg
+public/images/projects/zolotaya-rosha/15.jpg
+public/images/projects/zolotaya-rosha/16.jpg
+public/images/projects/zolotaya-rosha/2.jpg
+public/images/projects/zolotaya-rosha/3.jpg
+public/images/projects/zolotaya-rosha/4.jpg
+public/images/projects/zolotaya-rosha/5.jpg
+public/images/projects/zolotaya-rosha/6.jpg
+public/images/projects/zolotaya-rosha/7.jpg
+public/images/projects/zolotaya-rosha/8.jpg
+public/images/projects/zolotaya-rosha/9.jpg
+public/images/projects/zolotaya-rosha/cover.jpg
+README.md
+repomix.config.json
+src/app/(site)/about/page.tsx
+src/app/(site)/contacts/page.tsx
+src/app/(site)/layout.module.css
+src/app/(site)/layout.tsx
+src/app/(site)/page.tsx
+src/app/(site)/projects/[slug]/page.tsx
+src/app/(site)/projects/page.tsx
+src/app/(site)/services/page.tsx
+src/app/favicon.ico
+src/app/fonts/Bounded-Variable.ttf
+src/app/fonts/VelaSans-GX.ttf
+src/components/features/FontScaler/FontScaler.tsx
+src/components/icons/arrow-right.svg
+src/components/icons/logo.svg
+src/components/layout/Footer/Footer.module.css
+src/components/layout/Footer/Footer.tsx
+src/components/layout/Header/Header.module.css
+src/components/layout/Header/Header.tsx
+src/components/layout/Main/Main.module.css
+src/components/layout/Main/Main.tsx
+src/components/layout/Nav/Nav.module.css
+src/components/layout/Nav/Nav.tsx
+src/components/layout/Section/Section.module.css
+src/components/layout/Section/Section.tsx
+src/components/sections/home/Hero/Hero.module.css
+src/components/sections/home/Hero/Hero.tsx
+src/components/sections/home/Intro/Intro.module.css
+src/components/sections/home/Intro/Intro.tsx
+src/components/sections/home/Process/Process.module.css
+src/components/sections/home/Process/Process.tsx
+src/components/sections/home/Transformation/Transformation.module.css
+src/components/sections/home/Transformation/Transformation.tsx
+src/components/ui/AccordionItem/AccordionItem.module.css
+src/components/ui/AccordionItem/AccordionItem.tsx
+src/components/ui/BeforeAfter/BeforeAfter.module.css
+src/components/ui/BeforeAfter/BeforeAfter.tsx
+src/components/ui/Button/Button.module.css
+src/components/ui/Button/Button.tsx
+src/components/ui/ButtonLink/ButtonLink.module.css
+src/components/ui/ButtonLink/ButtonLink.tsx
+src/components/ui/Noise/Noise.module.css
+src/components/ui/Noise/Noise.tsx
+src/components/ui/SplitEffect/SplitEffect.module.css
+src/components/ui/SplitEffect/SplitEffect.tsx
+src/components/ui/Text/Text.module.css
+src/components/ui/Text/Text.tsx
+src/data/projects.json
+src/lib/cn.ts
+src/lib/constants.ts
+src/lib/definitions.ts
+src/lib/formatters.ts
+src/lib/projects.ts
+src/styles/globals.css
+src/styles/variables.css
+src/types/svg.d.ts
+stylelint.config.mjs
+tsconfig.json
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="repomix.config.json">
+{
+	"$schema": "https://repomix.com/schemas/latest/schema.json",
+	"input": {
+		"maxFileSize": 52428800
+	},
+	"output": {
+		"filePath": "repomix.xml",
+		"style": "xml",
+		"parsableStyle": false,
+		"fileSummary": true,
+		"directoryStructure": true,
+		"files": true,
+		"removeComments": false,
+		"removeEmptyLines": false,
+		"compress": false,
+		"topFilesLength": 5,
+		"showLineNumbers": false,
+		"truncateBase64": false,
+		"copyToClipboard": false,
+		"includeFullDirectoryStructure": false,
+		"tokenCountTree": false,
+		"git": {
+			"sortByChanges": true,
+			"sortByChangesMaxCommits": 100,
+			"includeDiffs": false,
+			"includeLogs": false,
+			"includeLogsCount": 50
+		}
+	},
+	"include": [],
+	"ignore": {
+		"useGitignore": true,
+		"useDotIgnore": true,
+		"useDefaultPatterns": true,
+		"customPatterns": ["**/node_modules/**"]
+	},
+	"security": {
+		"enableSecurityCheck": true
+	},
+	"tokenCount": {
+		"encoding": "o200k_base"
+	}
+}
+</file>
+
+<file path=".gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path=".prettierrc.mjs">
+/**
+ * @see https://prettier.io/docs/configuration
+ * @type {import('prettier').Config}
+ */
+const config = {
+  semi: false,
+  singleQuote: true,
+  jsxSingleQuote: true,
+  useTabs: true,
+  printWidth: 80,
+
+  trailingComma: "all",
+  endOfLine: "lf",
+};
+
+export default config;
+</file>
+
+<file path="eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+import prettier from "eslint-config-prettier/flat";
+import importPlugin from "eslint-plugin-import";
+import unusedImports from "eslint-plugin-unused-imports";
+
+const config = defineConfig([
+  // База Next + CWV
+  ...nextVitals,
+  // TypeScript правила поверх базы
+  ...nextTs,
+
+  // Основные правила для исходников
+  {
+    files: ["**/*.{js,jsx,ts,tsx}"],
+    plugins: {
+      import: importPlugin,
+      "unused-imports": unusedImports,
+    },
+    rules: {
+      // Нормальная дисциплина в коде
+      "no-console": ["warn", { allow: ["warn", "error"] }],
+      "no-debugger": "error",
+
+      // Убираем дубль-репорты: пусть этим рулит unused-imports
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+
+      // Авто-чистка импортов и аккуратные unused vars
+      "unused-imports/no-unused-imports": "error",
+      "unused-imports/no-unused-vars": [
+        "warn",
+        {
+          vars: "all",
+          varsIgnorePattern: "^_",
+          args: "after-used",
+          argsIgnorePattern: "^_",
+        },
+      ],
+
+      // Импорт-порядок — максимально “без сюрпризов”
+      "import/order": [
+        "error",
+        {
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+          ],
+          "newlines-between": "always",
+          alphabetize: { order: "asc", caseInsensitive: true },
+
+          // Если используешь алиас "@/..."
+          pathGroups: [
+            { pattern: "@/**", group: "internal", position: "after" },
+          ],
+          pathGroupsExcludedImportTypes: ["builtin"],
+        },
+      ],
+    },
+  },
+
+  // Конфиги/скрипты: менее строгие правила, чтобы не мешали
+  {
+    files: [
+      "**/*.{config,conf}.{js,cjs,mjs}",
+      "eslint.config.mjs",
+      "stylelint.config.mjs",
+      ".prettierrc.mjs",
+      "prettier.config.mjs",
+    ],
+    plugins: {
+      import: importPlugin,
+    },
+    rules: {
+      "no-console": "off",
+      "import/no-anonymous-default-export": "off",
+    },
+  },
+
+  // Всегда в конце — чтобы ESLint не спорил с Prettier
+  prettier, // :contentReference[oaicite:5]{index=5}
+
+  // Игноры: расширяем дефолты Next
+  globalIgnores([
+    // дефолтные ignores из примера Next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+
+    // типичные доп. для реальных проектов:
+    "dist/**",
+    "coverage/**",
+    ".turbo/**",
+    ".vercel/**",
+    "node_modules/**",
+  ]),
+]);
+
+export default config;
+</file>
+
+<file path="next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  reactCompiler: true,
+  turbopack: {
+    rules: {
+      "./src/components/icons/*.svg": {
+        loaders: [
+          {
+            loader: "@svgr/webpack",
+            options: {
+              icon: true,
+              svgo: true,
+              svgoConfig: {
+                plugins: [
+                  {
+                    name: "preset-default",
+                    params: {
+                      overrides: {
+                        removeViewBox: false,
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+          },
+        ],
+        as: "*.js",
+      },
+    },
+  },
+};
+
+export default nextConfig;
+</file>
+
+<file path="README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</file>
+
+<file path="src/components/icons/arrow-right.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+</file>
+
+<file path="src/components/layout/Footer/Footer.module.css">
+
+</file>
+
+<file path="src/components/layout/Footer/Footer.tsx">
+export const Footer = () => {
+	return <footer>footer</footer>
+}
+</file>
+
+<file path="src/components/sections/home/Process/Process.tsx">
+'use client'
+
+import { useState } from 'react'
+
+import { Section } from '@/components/layout/Section/Section'
+import { AccordionItem } from '@/components/ui/AccordionItem/AccordionItem'
+import { Text } from '@/components/ui/Text/Text'
+
+import styles from './Process.module.css'
+
+const STAGES = [
+	{
+		id: '01',
+		title: 'Встреча и бриф',
+		text: 'Знакомимся на объекте или в офисе. Обсуждаем ваши пожелания, стиль жизни, состав семьи и бюджет. Составляем подробное техническое задание, которое станет фундаментом проекта.',
+	},
+	{
+		id: '02',
+		title: 'Планировочное решение',
+		text: 'Разрабатываем 2-3 варианта функциональной планировки. Расставляем мебель с учетом эргономики, освещения и инженерных коммуникаций. Утверждаем финальный вариант.',
+	},
+	{
+		id: '03',
+		title: '3D Визуализация',
+		text: 'Создаем фотореалистичные изображения будущего интерьера. Вы увидите реальные материалы, цвета и мебель еще до начала ремонта.',
+	},
+	{
+		id: '04',
+		title: 'Рабочая документация',
+		text: 'Готовим подробные чертежи для строителей: планы демонтажа/монтажа, электрики, сантехники, развертки стен и спецификации материалов.',
+	},
+	{
+		id: '05',
+		title: 'Авторский надзор',
+		text: 'Контролируем стройку на всех этапах. Решаем вопросы с подрядчиками, следим за соответствием реализации проекту и помогаем с закупками.',
+	},
+]
+
+export const Process = () => {
+	const [activeId, setActiveId] = useState<string>(STAGES[0].id)
+	const toggleAccordion = (id: string) => {
+		setActiveId((prevId) => (prevId === id ? '' : id))
+	}
+	return (
+		<Section>
+			<div className={styles.root}>
+				<div className={styles.heading}>
+					<Text as={'h2'} size={'4xl'} weight={'medium'}>
+						Этапы работы
+					</Text>
+				</div>
+				<div className={styles.list}>
+					{STAGES.map((stage) => (
+						<AccordionItem
+							key={stage.id}
+							num={stage.id}
+							title={stage.title}
+							isOpen={activeId === stage.id}
+							onClick={() => toggleAccordion(stage.id)}
+						>
+							{stage.text}
+						</AccordionItem>
+					))}
+				</div>
+			</div>
+		</Section>
+	)
+}
+</file>
+
+<file path="src/components/ui/AccordionItem/AccordionItem.tsx">
+import { ReactNode } from 'react'
+
+import { Text } from '@/components/ui/Text/Text'
+import { cn } from '@/lib/cn'
+
+import styles from './AccordionItem.module.css'
+
+interface Props {
+	num: string
+	title: string
+	children: ReactNode
+	isOpen: boolean
+	onClick: () => void
+}
+
+export const AccordionItem = ({
+	num,
+	title,
+	children,
+	isOpen,
+	onClick,
+}: Props) => {
+	return (
+		<div className={cn(styles.root, isOpen && styles.open)}>
+			<button
+				className={styles.trigger}
+				onClick={onClick}
+				aria-expanded={isOpen}
+			>
+				<div className={styles.headerTitle}>
+					<div className={styles.titleWrapper}>
+						<Text as='span' size={'lg'} className={styles.num}>
+							{num}
+						</Text>
+						<Text as='h3' size='3xl' weight='medium'>
+							{title}
+						</Text>
+					</div>
+					<div className={styles.icon}>
+						<div className={styles.lineHorizontal} />
+						<div className={styles.lineVertical} />
+					</div>
+				</div>
+
+				<div className={styles.contentGrid}>
+					<div className={styles.contentWrapper}>
+						<div className={styles.contentInner}>
+							<Text size={'lg'}>{children}</Text>
+						</div>
+					</div>
+				</div>
+			</button>
+		</div>
+	)
+}
+</file>
+
+<file path="src/components/ui/Button/Button.module.css">
+
+</file>
+
+<file path="src/components/ui/Button/Button.tsx">
+
+</file>
+
+<file path="src/components/ui/ButtonLink/ButtonLink.module.css">
+.root {
+	border-radius: 0.03rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	transition:
+		0.3s background ease-in-out,
+		0.3s color ease-in-out;
+}
+
+.sm {
+	height: 0.7rem;
+	padding: 0 0.35rem;
+}
+
+.base {
+	height: 0.7rem;
+	padding: 0 0.35rem;
+}
+</file>
+
+<file path="src/components/ui/ButtonLink/ButtonLink.tsx">
+import Link from 'next/link'
+import { ComponentProps, ReactNode } from 'react'
+
+import { cn } from '@/lib/cn'
+
+import styles from './ButtonLink.module.css' // Твои стили
+
+type LinkSize = 'sm' | 'base'
+
+interface Props extends ComponentProps<typeof Link> {
+	children: ReactNode
+	size?: LinkSize
+	className?: string
+}
+
+export const ButtonLink = ({
+	children,
+	size = 'base',
+	className,
+	...props
+}: Props) => {
+	return (
+		<Link className={cn(styles.root, styles[`${size}`], className)} {...props}>
+			{children}
+		</Link>
+	)
+}
+</file>
+
+<file path="src/components/ui/Noise/Noise.tsx">
+import styles from './Noise.module.css'
+
+interface Props {
+	isVisible?: boolean
+}
+
+export const Noise = ({ isVisible = true }: Props) => {
+	if (!isVisible) return
+
+	return (
+		<div className={styles.noise}>
+			<div className={styles.overlay}>
+				<div className={styles.effect}></div>
+			</div>
+		</div>
+	)
+}
+</file>
+
+<file path="src/components/ui/SplitEffect/SplitEffect.module.css">
+.line {
+	position: relative;
+	height: inherit;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.05rem;
+	padding: 0 0.01rem;
+
+	transition: transform 0.8s var(--ease);
+
+	&.hover {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateY(110%);
+		font-style: italic;
+	}
+}
+
+.root {
+	position: relative;
+	overflow: hidden;
+	display: block;
+
+	&:hover {
+		.line.normal {
+			transform: translateY(-110%);
+		}
+
+		.line.hover {
+			transform: translateY(0);
+		}
+	}
+}
+</file>
+
+<file path="src/components/ui/SplitEffect/SplitEffect.tsx">
+import { HTMLAttributes, ReactNode } from 'react'
+
+import { cn } from '@/lib/cn'
+
+import styles from './SplitEffect.module.css'
+
+interface Props extends HTMLAttributes<HTMLElement> {
+	children: ReactNode
+	className?: string
+	isActive?: boolean
+}
+
+export const SplitEffect = ({
+	className,
+	children,
+	isActive = false,
+	...props
+}: Props) => {
+	return (
+		<div
+			className={cn(className, styles.root, isActive && styles.active)}
+			{...props}
+		>
+			<div className={cn(styles.line, styles.normal)}>{children}</div>
+			<div className={cn(styles.line, styles.hover)}>{children}</div>
+		</div>
+	)
+}
+</file>
+
+<file path="src/data/projects.json">
+{
+	"version": 1.01,
+	"projects": [
+		{
+			"id": "001",
+			"slug": "primorsky",
+			"status": "finished",
+			"title": "ЖК «Приморский квартал»",
+			"tags": ["Санкт-Петербург", "Минимализм", "86 м², '2025"],
+			"info": [
+				{ "label": "Площадь", "value": "86 м²" },
+				{ "label": "Город", "value": "Санкт-Петербург" },
+				{ "label": "Стиль", "value": "Минимализм" },
+				{ "label": "Срок разработки", "value": "55 рабочих дней" },
+				{ "label": "Год", "value": "2025" }
+			],
+			"description": [
+				"Интерьер сочетает эстетику минимализма с практичностью, создавая комфортное пространство для семьи с ребенком и двумя собаками. Пространство организовано так, чтобы обеспечить свободу передвижения, удобство хранения и гармонию между стилем и функциональностью. Светлая кухня-гостиная становится центром общения, детская комната — местом для игр, а спальни — уютной зоной отдыха. Скрытые системы хранения поддерживают порядок, не нарушая дизайн.",
+				"В оформлении использованы натуральные оттенки: белый, теплый беж, мягкие серые тона с акцентами дерева и металла. Тактильные материалы создают уют, а устойчивые поверхности обеспечивают практичность для активной жизни. Пространство зонировано так, чтобы минималистичная мебель не перегружала интерьер, большие окна наполняли его светом, а продуманное освещение делало атмосферу комфортной в любое время суток."
+			],
+			"cover": {
+				"src": "/images/projects/primorsky/cover.jpg",
+				"alt": "Обложка проекта ЖК «Приморский квартал»",
+				"w": 4788,
+				"h": 3591
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/primorsky/1.jpg",
+					"alt": "Гостиная — рабочие места",
+					"w": 4788,
+					"h": 3591
+				},
+				{
+					"src": "/images/projects/primorsky/2.jpg",
+					"alt": "Гостиная — общий вид",
+					"w": 5210,
+					"h": 3908
+				},
+				{
+					"src": "/images/projects/primorsky/3.jpg",
+					"alt": "Прихожая — общий вид",
+					"w": 3730,
+					"h": 4969
+				},
+				{
+					"src": "/images/projects/primorsky/4.jpg",
+					"alt": "Гостиная — зона отдыха",
+					"w": 3218,
+					"h": 4290
+				},
+				{
+					"src": "/images/projects/primorsky/5.jpg",
+					"alt": "Кухня — общий вид",
+					"w": 3202,
+					"h": 4931
+				},
+				{
+					"src": "/images/projects/primorsky/6.jpg",
+					"alt": "Кухня — столешница",
+					"w": 3917,
+					"h": 5217
+				},
+				{
+					"src": "/images/projects/primorsky/7.jpg",
+					"alt": "Сан. узел №1 — общий вид",
+					"w": 3429,
+					"h": 4567
+				},
+				{
+					"src": "/images/projects/primorsky/8.jpg",
+					"alt": "Детская — спальная зона",
+					"w": 3510,
+					"h": 4680
+				},
+				{
+					"src": "/images/projects/primorsky/9.jpg",
+					"alt": "Детская — игровая зона",
+					"w": 3631,
+					"h": 4842
+				},
+				{
+					"src": "/images/projects/primorsky/10.jpg",
+					"alt": "Сан. узел №2 — общий вид",
+					"w": 3680,
+					"h": 4906
+				},
+				{
+					"src": "/images/projects/primorsky/11.jpg",
+					"alt": "Спальня — прикроватная тумбочка №1",
+					"w": 4000,
+					"h": 5328
+				},
+				{
+					"src": "/images/projects/primorsky/12.jpg",
+					"alt": "Спальня — прикроватная тумбочка №2",
+					"w": 3911,
+					"h": 5214
+				},
+				{
+					"src": "/images/projects/primorsky/13.jpg",
+					"alt": "Спальня — декоративная подсветка",
+					"w": 3898,
+					"h": 5197
+				},
+				{
+					"src": "/images/projects/primorsky/14.jpg",
+					"alt": "Гардероб — общий вид",
+					"w": 3821,
+					"h": 5089
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/primorsky/1.jpg",
+					"alt": "Гостиная — рабочее место",
+					"w": 4788,
+					"h": 3591
+				},
+				"after": {
+					"src": "/images/projects/primorsky/2.jpg",
+					"alt": "Гостиная — общий вид",
+					"w": 5210,
+					"h": 3908
+				}
+			},
+			"updatedAt": "2026-02-04"
+		},
+		{
+			"id": "002",
+			"slug": "chernaya-rechka-41",
+			"status": "in_progress",
+			"title": "ЖК «Черная речка 41»",
+			"tags": ["Санкт-Петербург", "Джапанди", "84 м², '2026"],
+			"info": [
+				{ "label": "Площадь", "value": "86 м²" },
+				{ "label": "Город", "value": "Москва" },
+				{ "label": "Стиль", "value": "Джапанди" },
+				{ "label": "Срок разработки", "value": "95 рабочих дней" },
+				{ "label": "Год", "value": "2026" }
+			],
+			"description": [
+				"Проект квартиры для семьи с двумя маленькими детьми выполнен в стиле джапанди — спокойном, тёплом и функциональном. В основе интерьера — натуральные оттенки, тактильные материалы, дерево, мягкий свет и лаконичные формы, создающие ощущение уюта и баланса.",
+				"Пространство продумано с учётом жизни с детьми: безопасные решения, удобное хранение и гибкие зоны для отдыха, игр и повседневных сценариев. Интерьер получился сдержанным, но живым — таким, который будет комфортно «расти» вместе с семьёй."
+			],
+			"cover": {
+				"src": "/images/projects/chernaya-rechka-41/cover.jpg",
+				"alt": "ЖК «Черная речка 41»",
+				"w": 1467,
+				"h": 1658
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/chernaya-rechka-41/1.jpg",
+					"alt": "Гостиная — рабочие места",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/2.jpg",
+					"alt": "Гостиная — общий вид",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/3.jpg",
+					"alt": "Прихожая — общий вид",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/4.jpg",
+					"alt": "Гостиная — зона отдыха",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/5.jpg",
+					"alt": "Кухня — общий вид",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/6.jpg",
+					"alt": "Кухня — столешница",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/7.jpg",
+					"alt": "Сан. узел №1 — общий вид",
+					"w": 2000,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/8.jpg",
+					"alt": "Детская — спальная зона",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/9.jpg",
+					"alt": "Детская — игровая зона",
+					"w": 1333,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/10.jpg",
+					"alt": "Сан. узел №2 — общий вид",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/11.jpg",
+					"alt": "Спальня — прикроватная тумбочка №1",
+					"w": 1467,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/chernaya-rechka-41/12.jpg",
+					"alt": "Спальня — прикроватная тумбочка №2",
+					"w": 1467,
+					"h": 2000
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/chernaya-rechka-41/1.jpg",
+					"alt": "Гостиная — рабочее место",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/chernaya-rechka-41/2.jpg",
+					"alt": "Гостиная — общий вид",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-04"
+		},
+		{
+			"id": "003",
+			"slug": "kamysh",
+			"status": "finished",
+			"title": "Проект «Камыш»",
+			"tags": ["Санкт-Петербург", "Современный", "82 м², '2025"],
+			"info": [
+				{ "label": "Площадь", "value": "82 м²" },
+				{ "label": "Город", "value": "Санкт-Петербург" },
+				{ "label": "Стиль", "value": "Современный" },
+				{ "label": "Срок разработки", "value": "60 рабочих дней" },
+				{ "label": "Год", "value": "2025" }
+			],
+			"description": [
+				"Дизайн трёхкомнатной квартиры выполнен в современном минималистичном стиле с акцентом на спокойные, сдержанные оттенки. Интерьер выдержан в нейтральной гамме без ярких цветов, что создаёт атмосферу уюта и умиротворения.",
+				"Мебель лаконична и функциональна, с мягкими формами и натуральными текстурами. Продуманное освещение и встроенные системы хранения подчёркивают чистоту линий и упорядоченность пространства."
+			],
+			"cover": {
+				"src": "/images/projects/kamysh/cover.jpg",
+				"alt": "Проект «Камыш»",
+				"w": 2800,
+				"h": 2000
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/kamysh/1.jpg",
+					"alt": "Изображение проекта №1",
+					"w": 2370,
+					"h": 3000
+				},
+				{
+					"src": "/images/projects/kamysh/2.jpg",
+					"alt": "Изображение проекта №2",
+					"w": 2000,
+					"h": 2667
+				},
+				{
+					"src": "/images/projects/kamysh/3.jpg",
+					"alt": "Изображение проекта №3",
+					"w": 1540,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/kamysh/4.jpg",
+					"alt": "Изображение проекта №4",
+					"w": 1540,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/kamysh/5.jpg",
+					"alt": "Изображение проекта №5",
+					"w": 1540,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/kamysh/6.jpg",
+					"alt": "Изображение проекта №6",
+					"w": 1580,
+					"h": 2000
+				},
+				{
+					"src": "/images/projects/kamysh/7.jpg",
+					"alt": "Изображение проекта №7",
+					"w": 2000,
+					"h": 2532
+				},
+				{
+					"src": "/images/projects/kamysh/8.jpg",
+					"alt": "Изображение проекта №8",
+					"w": 2000,
+					"h": 2540
+				},
+				{
+					"src": "/images/projects/kamysh/9.jpg",
+					"alt": "Изображение проекта №9",
+					"w": 1647,
+					"h": 1671
+				},
+				{
+					"src": "/images/projects/kamysh/10.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 2361,
+					"h": 3000
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/kamysh/1.jpg",
+					"alt": "Изображение проекта до",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/kamysh/2.jpg",
+					"alt": "Изображение проекта после",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-03"
+		},
+		{
+			"id": "004",
+			"slug": "leontievsky-mys",
+			"status": "in_progress",
+			"title": "ЖК «Леонтьевский Мыс»",
+			"tags": ["Санкт-Петербург", "Современный", "46 м², '2026"],
+			"info": [
+				{ "label": "Площадь", "value": "46 м²" },
+				{ "label": "Город", "value": "Санкт-Петербург" },
+				{ "label": "Стиль", "value": "Современный" },
+				{ "label": "Срок разработки", "value": "40 рабочих дней" },
+				{ "label": "Год", "value": "2026" }
+			],
+			"description": [
+				"Домашний кабинет с приёмной спроектирован как сдержанное и функциональное пространство для работы и встреч. Чёткое зонирование объединяет рабочее место и зону переговоров, а нейтральная палитра и лаконичные формы создают спокойную, деловую атмосферу.",
+				"Комната отдыха служит зоной перезагрузки. Из-за отсутствия естественного света на стене предусмотрено большое световое окно, которое визуально расширяет пространство и имитирует дневное освещение, формируя ощущение комфорта и уюта."
+			],
+			"cover": {
+				"src": "/images/projects/leontievsky-mys/cover.jpg",
+				"alt": "ЖК «Леонтьевский Мыс»",
+				"w": 1800,
+				"h": 1191
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/leontievsky-mys/1.jpg",
+					"alt": "Изображение проекта №1",
+					"w": 1588,
+					"h": 1742
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/2.jpg",
+					"alt": "Изображение проекта №2",
+					"w": 1800,
+					"h": 1191
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/3.jpg",
+					"alt": "Изображение проекта №3",
+					"w": 1800,
+					"h": 1680
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/4.jpg",
+					"alt": "Изображение проекта №4",
+					"w": 1020,
+					"h": 1494
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/5.jpg",
+					"alt": "Изображение проекта №5",
+					"w": 1050,
+					"h": 1605
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/6.jpg",
+					"alt": "Изображение проекта №6",
+					"w": 1956,
+					"h": 2500
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/7.jpg",
+					"alt": "Изображение проекта №7",
+					"w": 2500,
+					"h": 2500
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/8.jpg",
+					"alt": "Изображение проекта №8",
+					"w": 1734,
+					"h": 2500
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/9.jpg",
+					"alt": "Изображение проекта №9",
+					"w": 1501,
+					"h": 2500
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/10.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 1800,
+					"h": 2106
+				},
+				{
+					"src": "/images/projects/leontievsky-mys/11.jpg",
+					"alt": "Изображение проекта №11",
+					"w": 1800,
+					"h": 2400
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/leontievsky-mys/1.jpg",
+					"alt": "Изображение проекта до",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/leontievsky-mys/2.jpg",
+					"alt": "Изображение проекта после",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-03"
+		},
+		{
+			"id": "005",
+			"slug": "cube",
+			"status": "finished",
+			"title": "ЖК «Куб»",
+			"tags": ["Санкт-Петербург", "Современный", "61 м², '2025"],
+			"info": [
+				{ "label": "Площадь", "value": "61 м²" },
+				{ "label": "Город", "value": "Санкт-Петербург" },
+				{ "label": "Стиль", "value": "Современный" },
+				{ "label": "Срок разработки", "value": "36 рабочих дней" },
+				{ "label": "Год", "value": "2025" }
+			],
+			"description": [
+				"Дизайн-проект трёхкомнатной квартиры выполнен в современной стилистике с использованием серого и зелёного цветов, с акцентами пудрово-розового. Интерьер оформлен с природным уклоном: в отделке активно используются обои и декоративные элементы с изображением растений, что придаёт пространству свежесть и индивидуальность.",
+				"Кухня и гостиная объединены в светлое, просторное помещение с серой отделкой и зелёным диваном на фоне стены с растительным рисунком. Спальня оформлена в спокойной гамме с розовыми шторами, серым диваном и акцентной стеной с изображением растений. В детской зелёные стены сочетаются с розовыми обоями, создавая мягкую, уютную и жизнерадостную атмосферу."
+			],
+			"cover": {
+				"src": "/images/projects/cube/cover.jpg",
+				"alt": "ЖК «Куб»",
+				"w": 2768,
+				"h": 2400
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/cube/1.jpg",
+					"alt": "Изображение проекта №1",
+					"w": 2147,
+					"h": 2082
+				},
+				{
+					"src": "/images/projects/cube/2.jpg",
+					"alt": "Изображение проекта №2",
+					"w": 3200,
+					"h": 2400
+				},
+				{
+					"src": "/images/projects/cube/3.jpg",
+					"alt": "Изображение проекта №3",
+					"w": 1853,
+					"h": 2400
+				},
+				{
+					"src": "/images/projects/cube/4.jpg",
+					"alt": "Изображение проекта №4",
+					"w": 2768,
+					"h": 2400
+				},
+				{
+					"src": "/images/projects/cube/5.jpg",
+					"alt": "Изображение проекта №5",
+					"w": 2192,
+					"h": 1929
+				},
+				{
+					"src": "/images/projects/cube/6.jpg",
+					"alt": "Изображение проекта №6",
+					"w": 2477,
+					"h": 2157
+				},
+				{
+					"src": "/images/projects/cube/7.jpg",
+					"alt": "Изображение проекта №7",
+					"w": 2717,
+					"h": 2067
+				},
+				{
+					"src": "/images/projects/cube/8.jpg",
+					"alt": "Изображение проекта №8",
+					"w": 1679,
+					"h": 2037
+				},
+				{
+					"src": "/images/projects/cube/9.jpg",
+					"alt": "Изображение проекта №9",
+					"w": 1482,
+					"h": 2400
+				},
+				{
+					"src": "/images/projects/cube/10.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 1079,
+					"h": 2256
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/cube/1.jpg",
+					"alt": "Изображение проекта до",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/cube/2.jpg",
+					"alt": "Изображение проекта после",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-03"
+		},
+		{
+			"id": "006",
+			"slug": "mussel-story",
+			"status": "finished",
+			"title": "Ресторан «Мидийная история»",
+			"tags": ["Санкт-Петербург", "Экостиль", "45 м², '2025"],
+			"info": [
+				{ "label": "Площадь", "value": "61 м²" },
+				{ "label": "Город", "value": "Санкт-Петербург" },
+				{ "label": "Стиль", "value": "Экостиль" },
+				{ "label": "Срок разработки", "value": "20 рабочих дней" },
+				{ "label": "Год", "value": "2025" }
+			],
+			"description": [
+				"Разработан редизайн кафе «Мидийная история» в современной морской эстетике, с акцентом на уют и природные элементы. В центре зала размещено декоративное дерево с лимонами, которое создает атмосферу внутреннего сада. Сочетание глубоких синих кресел, жёлтых диванов и отделки из натурального дерева формирует свежий, тёплый и гармоничный образ пространства.",
+				"Интерьер дополнен мягким направленным освещением, графичной потолочной решёткой и настенными росписями с абстрактными морскими мотивами. Пространство организовано так, чтобы обеспечить комфорт и приватность, сохраняя при этом стильный и запоминающийся визуальный облик бренда."
+			],
+			"cover": {
+				"src": "/images/projects/mussel-story/cover.png",
+				"alt": "Ресторан «Мидийная история»",
+				"w": 1802,
+				"h": 1550
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/mussel-story/1.png",
+					"alt": "Изображение проекта №1",
+					"w": 1883,
+					"h": 1800
+				},
+				{
+					"src": "/images/projects/mussel-story/2.png",
+					"alt": "Изображение проекта №2",
+					"w": 2400,
+					"h": 2400
+				},
+				{
+					"src": "/images/projects/mussel-story/3.jpg",
+					"alt": "Изображение проекта №3",
+					"w": 1802,
+					"h": 1550
+				},
+				{
+					"src": "/images/projects/mussel-story/4.png",
+					"alt": "Изображение проекта №4",
+					"w": 2285,
+					"h": 1748
+				},
+				{
+					"src": "/images/projects/mussel-story/5.png",
+					"alt": "Изображение проекта №5",
+					"w": 1800,
+					"h": 2142
+				},
+				{
+					"src": "/images/projects/mussel-story/6.png",
+					"alt": "Изображение проекта №6",
+					"w": 1275,
+					"h": 1410
+				},
+				{
+					"src": "/images/projects/mussel-story/7.png",
+					"alt": "Изображение проекта №7",
+					"w": 1029,
+					"h": 1452
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/mussel-story/1.png",
+					"alt": "Изображение проекта до",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/mussel-story/2.png",
+					"alt": "Изображение проекта после",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-03"
+		},
+		{
+			"id": "007",
+			"slug": "zolotaya-rosha",
+			"status": "in_progress",
+			"title": "ДНП «Золотая Роща»",
+			"tags": ["Санкт-Петербург", "Современный", "230 м², '2026"],
+			"info": [
+				{ "label": "Площадь", "value": "230 м²" },
+				{ "label": "Город", "value": "Санкт-Петербург" },
+				{ "label": "Стиль", "value": "Современный" },
+				{ "label": "Срок разработки", "value": "118 рабочих дней" },
+				{ "label": "Год", "value": "2026" }
+			],
+			"description": [
+				"Проект предусматривает удобное зонирование: прихожая с гардеробной обеспечивает комфортное хранение, а гостевая комната создана для временного проживания гостей. Жилое пространство включает три приватные спальни и два современных санузла. Центральное место занимает просторная кухня-гостиная, объединяющая зону приготовления пищи и отдыха, с дополнительной кладовой для удобного хранения.",
+				"Внутренние холлы на каждом этаже создают ощущение простора, связывая функциональные зоны. Интерьер строится на сочетании глубоких серых и черных оттенков с природной текстурой дерева. Четкие линии и минимум округлых форм подчеркивают лаконичность, создавая элегантную и современную атмосферу."
+			],
+			"cover": {
+				"src": "/images/projects/zolotaya-rosha/cover.jpg",
+				"alt": "ДНП «Золотая Роща»",
+				"w": 2768,
+				"h": 2400
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/zolotaya-rosha/1.jpg",
+					"alt": "Изображение проекта №1",
+					"w": 3508,
+					"h": 2480
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/2.jpg",
+					"alt": "Изображение проекта №2",
+					"w": 3508,
+					"h": 2480
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/3.jpg",
+					"alt": "Изображение проекта №3",
+					"w": 3508,
+					"h": 1999
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/4.jpg",
+					"alt": "Изображение проекта №4",
+					"w": 3417,
+					"h": 1930
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/5.jpg",
+					"alt": "Изображение проекта №5",
+					"w": 3308,
+					"h": 2339
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/6.jpg",
+					"alt": "Изображение проекта №6",
+					"w": 3308,
+					"h": 2339
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/7.jpg",
+					"alt": "Изображение проекта №7",
+					"w": 1672,
+					"h": 2432
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/8.jpg",
+					"alt": "Изображение проекта №8",
+					"w": 9000,
+					"h": 6000
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/9.jpg",
+					"alt": "Изображение проекта №9",
+					"w": 3508,
+					"h": 2480
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/10.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 9000,
+					"h": 6000
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/11.jpg",
+					"alt": "Изображение проекта №11",
+					"w": 3508,
+					"h": 2480
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/12.jpg",
+					"alt": "Изображение проекта №12",
+					"w": 3508,
+					"h": 2480
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/13.jpg",
+					"alt": "Изображение проекта №13",
+					"w": 3508,
+					"h": 2480
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/14.jpg",
+					"alt": "Изображение проекта №14",
+					"w": 2071,
+					"h": 2246
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/15.jpg",
+					"alt": "Изображение проекта №15",
+					"w": 9000,
+					"h": 6000
+				},
+				{
+					"src": "/images/projects/zolotaya-rosha/16.jpg",
+					"alt": "Изображение проекта №16",
+					"w": 3543,
+					"h": 2362
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/zolotaya-rosha/1.jpg",
+					"alt": "Изображение проекта до",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/zolotaya-rosha/2.jpg",
+					"alt": "Изображение проекта после",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-03"
+		},
+		{
+			"id": "008",
+			"slug": "yasniy",
+			"status": "finished",
+			"title": "Проект «Ясный»",
+			"tags": ["Москва", "Современный", "125 м², '2024"],
+			"info": [
+				{ "label": "Площадь", "value": "125 м²" },
+				{ "label": "Город", "value": "Москва" },
+				{ "label": "Стиль", "value": "Современный" },
+				{ "label": "Срок разработки", "value": "65 рабочих дней" },
+				{ "label": "Год", "value": "2024" }
+			],
+			"description": [
+				"В проекте предусмотрены просторная прихожая, коридор, функциональная кухня, объединенная с гостиной, два санузла, три спальни и два балкона, обеспечивающие доступ свежего воздуха и естественного света. Основой стилистического решения стало стремление создать гармоничный интерьер, соответствующий потребностям семьи, с акцентом на открытое пространство гостиной и систему хранения для удобства и порядка в повседневной жизни.",
+				"Отделка использует природные и тактильно приятные материалы: древесину, металл, камень, стекло, хлопок, лен и керамику, органично вписывающиеся в современный стиль. Базовыми оттенками стали белый и теплый бежевый, создающие светлую атмосферу, а акцентные элементы в каждом помещении придают интерьеру индивидуальность, сочетая эстетику и комфорт."
+			],
+			"cover": {
+				"src": "/images/projects/yasniy/cover.jpg",
+				"alt": "Проект «Ясный»",
+				"w": 4653,
+				"h": 3508
+			},
+			"gallery": [
+				{
+					"src": "/images/projects/yasniy/1.jpg",
+					"alt": "Изображение проекта №1",
+					"w": 4317,
+					"h": 3508
+				},
+				{
+					"src": "/images/projects/yasniy/2.jpg",
+					"alt": "Изображение проекта №2",
+					"w": 3797,
+					"h": 3396
+				},
+				{
+					"src": "/images/projects/yasniy/3.jpg",
+					"alt": "Изображение проекта №3",
+					"w": 4653,
+					"h": 3508
+				},
+				{
+					"src": "/images/projects/yasniy/4.jpg",
+					"alt": "Изображение проекта №4",
+					"w": 4916,
+					"h": 3462
+				},
+				{
+					"src": "/images/projects/yasniy/5.jpg",
+					"alt": "Изображение проекта №5",
+					"w": 4961,
+					"h": 3508
+				},
+				{
+					"src": "/images/projects/yasniy/6.jpg",
+					"alt": "Изображение проекта №6",
+					"w": 2509,
+					"h": 3508
+				},
+				{
+					"src": "/images/projects/yasniy/7.jpg",
+					"alt": "Изображение проекта №7",
+					"w": 4916,
+					"h": 3462
+				},
+				{
+					"src": "/images/projects/yasniy/8.jpg",
+					"alt": "Изображение проекта №8",
+					"w": 3084,
+					"h": 2943
+				},
+				{
+					"src": "/images/projects/yasniy/9.jpg",
+					"alt": "Изображение проекта №9",
+					"w": 1881,
+					"h": 2912
+				},
+				{
+					"src": "/images/projects/yasniy/10.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 4141,
+					"h": 3508
+				},
+				{
+					"src": "/images/projects/yasniy/11.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 4333,
+					"h": 3444
+				},
+				{
+					"src": "/images/projects/yasniy/12.jpg",
+					"alt": "Изображение проекта №10",
+					"w": 4737,
+					"h": 3508
+				}
+			],
+			"beforeAfter": {
+				"before": {
+					"src": "/images/projects/yasniy/1.jpg",
+					"alt": "Изображение проекта до",
+					"w": 1467,
+					"h": 2000
+				},
+				"after": {
+					"src": "/images/projects/yasniy/2.jpg",
+					"alt": "Изображение проекта после",
+					"w": 1467,
+					"h": 2000
+				}
+			},
+			"updatedAt": "2026-02-03"
+		}
+	]
+}
+</file>
+
+<file path="src/lib/cn.ts">
+import { type ClassValue, clsx } from 'clsx'
+
+export const cn = (...inputs: ClassValue[]) => {
+	return clsx(inputs)
+}
+</file>
+
+<file path="src/lib/formatters.ts">
+export const formatCurrency = (amount: number) => {
+	return new Intl.NumberFormat('ru-RU', {
+		style: 'currency',
+		currency: 'RUB',
+		maximumFractionDigits: 0,
+	}).format(amount)
+}
+</file>
+
+<file path="src/lib/projects.ts">
+import fs from 'fs/promises'
+import path from 'path'
+
+import { cache } from 'react'
+
+import { DataSchema, type Project } from './definitions'
+
+const dataDirectory = path.join(process.cwd(), 'src/data')
+
+export const getProjects = cache(async (): Promise<Project[]> => {
+	const filePath = path.join(dataDirectory, 'projects.json')
+
+	try {
+		const fileContents = await fs.readFile(filePath, 'utf8')
+		const rawData = JSON.parse(fileContents)
+
+		const parsedData = DataSchema.safeParse(rawData)
+
+		if (!parsedData.success) {
+			console.error('❌ Zod Validation Error:', parsedData.error.flatten())
+			return []
+		}
+
+		return parsedData.data.projects
+	} catch (error) {
+		console.error('Failed to read projects data:', error)
+		return []
+	}
+})
+
+export const getProjectBySlug = cache(
+	async (slug: string): Promise<Project | undefined> => {
+		const projects = await getProjects()
+		return projects.find((project) => project.slug === slug)
+	},
+)
+</file>
+
+<file path="src/types/svg.d.ts">
+declare module "*.svg" {
+  import React from "react";
+  const SVG: React.FC<React.SVGProps<SVGSVGElement>>;
+  export default SVG;
+}
+
+declare module "*.svg?url" {
+  const content: string;
+  export default content;
+}
+</file>
+
+<file path="stylelint.config.mjs">
+/** @type {import('stylelint').Config} */
+const config = {
+  extends: ["stylelint-config-standard", "stylelint-config-clean-order"],
+  ignoreFiles: [
+    "**/.next/**",
+    "**/out/**",
+    "**/build/**",
+    "**/dist/**",
+    "**/coverage/**",
+    "**/node_modules/**",
+  ],
+  rules: {
+    "no-empty-source": null,
+    "selector-class-pattern": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { ignorePseudoClasses: ["global", "local"] },
+    ],
+  },
+};
+
+export default config;
+</file>
+
+<file path="tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/types/**/*.d.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "studiopole",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prepare": "husky",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "lint:fix": "eslint . --fix",
+    "stylelint": "stylelint \"**/*.{css,scss}\"",
+    "stylelint:fix": "stylelint \"**/*.{css,scss}\" --fix"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-compare-slider": "^3.1.0",
+    "react-dom": "19.2.3",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "repomix": "^1.12.0",
+    "sass": "^1.83.4",
+    "stylelint": "^16.12.0",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="src/app/(site)/about/page.tsx">
+export default function AboutPage() {
+	return <h1>Это страница о студии</h1>
+}
+</file>
+
+<file path="src/app/(site)/contacts/page.tsx">
+export default function ContactsPage() {
+	return <h1>Это страница контактов</h1>
+}
+</file>
+
+<file path="src/app/(site)/layout.module.css">
+.app {
+	position: relative;
+	min-height: inherit;
+	background: var(--c-beige);
+}
+</file>
+
+<file path="src/app/(site)/projects/[slug]/page.tsx">
+export default function ProjectPage() {
+	return <h1>Это динамическая страница проекта</h1>
+}
+</file>
+
+<file path="src/app/(site)/projects/page.tsx">
+export default function ProjectsPage() {
+	return <h1>Это страница всех проектов</h1>
+}
+</file>
+
+<file path="src/app/(site)/services/page.tsx">
+export default function ServicesPage() {
+	return <h1>Это страница услуг</h1>
+}
+</file>
+
+<file path="src/components/features/FontScaler/FontScaler.tsx">
+'use client'
+
+import { useEffect, useCallback } from 'react'
+
+interface FontScalerProps {
+	isFullScreen?: boolean
+}
+
+export const FontScaler = ({ isFullScreen = false }: FontScalerProps) => {
+	const handleResize = useCallback(() => {
+		if (typeof window === 'undefined' || isFullScreen) return
+
+		const width = window.innerWidth
+		const height = window.innerHeight
+		const maxScale = 1
+		let scale = 1
+
+		if (width <= 480) {
+			scale = 1
+		} else if (width <= 1054) {
+			const widthRatio = width / 1054
+			const heightRatio = height / 1405
+			scale = Math.min(widthRatio, heightRatio, maxScale)
+		} else {
+			const widthRatio = width / 1920
+			const heightRatio = height / 1080
+			scale = Math.min(widthRatio, heightRatio, maxScale)
+		}
+
+		const safeFontSize = scale * 100
+
+		document.documentElement.style.setProperty('font-size', `${safeFontSize}px`)
+
+		window.dispatchEvent(new CustomEvent('font-resize', { detail: { scale } }))
+	}, [isFullScreen])
+
+	useEffect(() => {
+		handleResize()
+
+		window.addEventListener('resize', handleResize)
+		window.addEventListener('orientationchange', handleResize)
+
+		return () => {
+			window.removeEventListener('resize', handleResize)
+			window.removeEventListener('orientationchange', handleResize)
+		}
+	}, [handleResize])
+
+	return null
+}
+</file>
+
+<file path="src/components/layout/Main/Main.module.css">
+.main {
+	min-height: 100vh;
+}
+</file>
+
+<file path="src/components/layout/Main/Main.tsx">
+import { ReactNode } from 'react'
+
+import styles from './Main.module.css'
+
+interface Props {
+	children: ReactNode
+}
+
+export const Main = ({ children }: Props) => {
+	return <main className={styles.main}>{children}</main>
+}
+</file>
+
+<file path="src/components/layout/Section/Section.tsx">
+import { ReactNode } from 'react'
+
+import { cn } from '@/lib/cn'
+
+import styles from './Section.module.css'
+
+interface Props {
+	children: ReactNode
+	className?: 'wide'
+}
+
+export const Section = ({ children, className }: Props) => {
+	return (
+		<section className={cn(styles.section, className && styles[className])}>
+			{children}
+		</section>
+	)
+}
+</file>
+
+<file path="src/components/sections/home/Process/Process.module.css">
+.root {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+}
+
+.heading {
+	padding-top: 20px;
+}
+
+.list {
+	padding-left: 20px;
+}
+</file>
+
+<file path="src/components/ui/AccordionItem/AccordionItem.module.css">
+.root {
+	border-bottom: 1px solid #cdcbc6;
+}
+
+.trigger {
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+
+	width: 100%;
+	padding: 24px 0;
+
+	text-align: left;
+
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.headerTitle {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.icon {
+	position: relative;
+	flex-shrink: 0;
+	width: 20px;
+	height: 20px;
+}
+
+.lineHorizontal,
+.lineVertical {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	background-color: var(--orange);
+
+	transition:
+		transform 0.3s ease,
+		background-color 0.3s ease;
+}
+
+.lineHorizontal {
+	width: 100%;
+	height: 2px;
+}
+
+.lineVertical {
+	width: 2px;
+	height: 100%;
+}
+
+.open .lineVertical {
+	transform: translate(-50%, -50%) rotate(90deg);
+	opacity: 0;
+}
+
+.contentGrid {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.4s ease-in-out;
+}
+
+.open .contentGrid {
+	grid-template-rows: 1fr;
+}
+
+.contentWrapper {
+	overflow: hidden;
+}
+
+.contentInner {
+	padding-bottom: 32px;
+}
+
+@media (width <= 768px) {
+	.contentInner {
+		padding-top: 12px;
+		padding-left: 0;
+	}
+
+	.headerTitle {
+		flex-direction: column;
+		gap: 12px;
+	}
+}
+</file>
+
+<file path="src/components/ui/Text/Text.tsx">
+// src/components/ui/Text/Text.tsx
+import { ElementType, ReactNode, HTMLAttributes } from 'react'
+
+import { cn } from '@/lib/cn'
+
+import styles from './Text.module.css'
+
+type TextSize =
+	| 'xs'
+	| 'sm'
+	| 'base'
+	| 'lg'
+	| 'xl'
+	| 'xxl'
+	| '2xl'
+	| '3xl'
+	| '4xl'
+	| '5xl'
+type TextWeight = 'regular' | 'medium' | 'semibold' | 'bold'
+
+interface Props extends HTMLAttributes<HTMLElement> {
+	as?: ElementType
+	size?: TextSize
+	weight?: TextWeight
+	children: ReactNode
+	className?: string
+}
+
+export const Text = ({
+	as: Tag = 'p',
+	size = 'base',
+	weight,
+	children,
+	className,
+	...props
+}: Props) => {
+	return (
+		<Tag
+			className={cn(
+				styles.root,
+				styles[`size-${size}`],
+				weight && styles[`weight-${weight}`],
+				className,
+			)}
+			{...props}
+		>
+			{children}
+		</Tag>
+	)
+}
+</file>
+
+<file path="src/lib/definitions.ts">
+import { z } from 'zod'
+
+export const ImageSchema = z.object({
+	src: z.string().min(1),
+	alt: z.string(),
+	w: z.number().int().positive(),
+	h: z.number().int().positive(),
+})
+
+export type ProjectImage = z.infer<typeof ImageSchema>
+
+const InfoItemSchema = z.object({
+	label: z.string(),
+	value: z.string(),
+})
+
+const ComparisonSchema = z.object({
+	before: ImageSchema,
+	after: ImageSchema,
+})
+
+export const ProjectSchema = z.object({
+	id: z.string(),
+	slug: z.string().min(1),
+	title: z.string().min(1),
+	status: z.enum(['finished', 'in_progress', 'concept']),
+	tags: z.array(z.string()),
+
+	description: z.array(z.string()),
+
+	info: z.array(InfoItemSchema),
+
+	cover: ImageSchema,
+	gallery: z.array(ImageSchema),
+
+	beforeAfter: ComparisonSchema.optional(),
+
+	updatedAt: z.string().optional(),
+})
+
+export type Project = z.infer<typeof ProjectSchema>
+
+export const DataSchema = z.object({
+	version: z.number(),
+	projects: z.array(ProjectSchema),
+})
+</file>
+
+<file path="src/components/icons/logo.svg">
+<svg width="456" height="456" viewBox="0 0 456 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M455.86 267.213V448.213C455.858 449.22 455.658 450.216 455.272 451.146C454.885 452.076 454.319 452.92 453.605 453.63C452.892 454.341 452.046 454.904 451.115 455.287C450.184 455.67 449.186 455.866 448.18 455.863H299.93C297.9 455.858 295.956 455.051 294.519 453.618C293.082 452.185 292.27 450.242 292.259 448.213V348.723C292.258 347.135 291.726 345.593 290.746 344.343C289.766 343.092 288.396 342.206 286.855 341.825C285.313 341.445 283.688 341.591 282.239 342.241C280.79 342.891 279.6 344.008 278.859 345.413L223.399 450.923C222.613 452.429 221.429 453.691 219.977 454.572C218.524 455.454 216.858 455.921 215.159 455.923H173.83C171.36 455.923 168.992 454.942 167.246 453.196C165.5 451.45 164.52 449.082 164.52 446.613V282.163V267.163C164.554 259.987 167.43 253.117 172.519 248.056C177.607 242.996 184.493 240.158 191.669 240.163H428.769C435.947 240.163 442.832 243.012 447.911 248.083C452.99 253.155 455.849 260.035 455.86 267.213Z" fill="white"/>
+<path d="M148.31 53.3633V308.363C148.31 320.493 138.7 330.703 126.57 330.873C119.499 330.978 112.479 329.676 105.916 327.043C99.3529 324.41 93.379 320.499 88.3412 315.536C83.3035 310.574 79.3026 304.66 76.571 298.137C73.8395 291.615 72.4319 284.615 72.43 277.543V223.883H22.51C16.54 223.883 10.8145 221.512 6.59302 217.29C2.37157 213.069 0 207.343 0 201.373V22.5133C0 16.5433 2.37157 10.8178 6.59302 6.59631C10.8145 2.37487 16.54 0.00327642 22.51 0.00327642H92.99C93.3245 -0.00852326 93.6593 0.011565 93.99 0.063274C94.3208 0.0125021 94.6555 -0.00758088 94.99 0.00327642C109.135 0.0138799 122.697 5.6404 132.695 15.6462C142.694 25.652 148.31 39.2183 148.31 53.3633Z" fill="url(#paint0_radial_46_9)"/>
+<path d="M455.86 24.1634V199.773C455.852 206.168 453.307 212.298 448.782 216.817C444.258 221.335 438.125 223.873 431.73 223.873H366.02C359.625 223.876 353.49 221.339 348.965 216.819C344.44 212.3 341.896 206.169 341.89 199.773V161.163C337.581 179.031 327.386 194.929 312.946 206.3C298.506 217.671 280.66 223.854 262.28 223.853H188.66C182.265 223.856 176.13 221.319 171.605 216.799C167.081 212.28 164.536 206.149 164.53 199.753V24.1634C164.533 17.7637 167.076 11.6266 171.6 7.10034C176.125 2.57408 182.26 0.0287379 188.66 0.0234384H320.01C326.413 0.0234384 332.553 2.56674 337.08 7.09387C341.607 11.621 344.15 17.7611 344.15 24.1634V69.9234C348.662 50.0695 359.787 32.3381 375.7 19.6373C391.613 6.93662 411.37 0.0205564 431.73 0.0234384C438.129 0.031382 444.264 2.57756 448.788 7.10326C453.311 11.629 455.855 17.7645 455.86 24.1634Z" fill="white"/>
+<path d="M124.48 345.873H56.26V257.043C56.2521 252.562 54.4656 248.267 51.293 245.102C48.1205 241.937 43.8213 240.16 39.34 240.163H16.93C14.7072 240.162 12.5059 240.598 10.4519 241.448C8.39792 242.298 6.53152 243.544 4.95929 245.115C3.38706 246.687 2.13981 248.552 1.28888 250.606C0.437945 252.659 -3.88214e-07 254.86 0 257.083V438.953C-3.88214e-07 441.176 0.437945 443.377 1.28888 445.43C2.13981 447.484 3.38706 449.35 4.95929 450.921C6.53152 452.492 8.39792 453.738 10.4519 454.588C12.5059 455.438 14.7072 455.874 16.93 455.873H124.48C130.8 455.873 136.861 453.362 141.33 448.893C145.799 444.424 148.31 438.363 148.31 432.043V369.703C148.31 363.383 145.799 357.322 141.33 352.853C136.861 348.384 130.8 345.873 124.48 345.873Z" fill="white"/>
+<defs>
+<radialGradient id="paint0_radial_46_9" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(74.155 165.44) rotate(90) scale(165.44 74.155)">
+<stop stop-color="#E28633"/>
+<stop offset="1" stop-color="#CD6E27"/>
+</radialGradient>
+</defs>
+</svg>
+</file>
+
+<file path="src/components/sections/home/Intro/Intro.tsx">
+import { Section } from '@/components/layout/Section/Section'
+import { ButtonLink } from '@/components/ui/ButtonLink/ButtonLink'
+import { SplitEffect } from '@/components/ui/SplitEffect/SplitEffect'
+import { Text } from '@/components/ui/Text/Text'
+
+import styles from './Intro.module.css'
+
+export const Intro = () => {
+	return (
+		<Section>
+			<div className={styles.container}>
+				<div className={styles.text}>
+					<Text as={'h2'} size={'3xl'} className={styles.title}>
+						Хороший дизайн способен изменить жизнь. Я создаю уникальные и
+						функциональные решения, отражающие индивидуальность каждого
+						заказчика, и проектирую пространства, которые вдохновляют.
+					</Text>
+				</div>
+				<ButtonLink href={'/about'} className={styles.ctaLink}>
+					<SplitEffect>
+						<Text as={'span'} weight={'semibold'} size={'lg'}>
+							Узнать больше о студии
+						</Text>
+					</SplitEffect>
+				</ButtonLink>
+			</div>
+		</Section>
+	)
+}
+</file>
+
+<file path="src/components/ui/BeforeAfter/BeforeAfter.tsx">
+'use client'
+
+import Image from 'next/image'
+import { ReactCompareSlider } from 'react-compare-slider'
+
+import { Text } from '@/components/ui/Text/Text'
+import { cn } from '@/lib/cn'
+
+import styles from './BeforeAfter.module.css'
+
+interface Props {
+	beforeSrc: string
+	afterSrc: string
+	beforeAlt?: string
+	afterAlt?: string
+	className?: string
+}
+
+export const BeforeAfter = ({
+	beforeSrc,
+	afterSrc,
+	beforeAlt = 'Визуализация',
+	afterAlt = 'Фотография',
+	className,
+}: Props) => {
+	return (
+		<div className={cn(styles.root, className)}>
+			<ReactCompareSlider
+				handle={
+					<div className={styles.handle}>
+						<div className={styles.line} />
+						<div className={styles.button}>
+							<svg
+								xmlns='http://www.w3.org/2000/svg'
+								width={24}
+								height={24}
+								viewBox='0 0 24 24'
+								fill='none'
+								stroke='currentColor'
+								strokeWidth={2}
+								strokeLinecap='round'
+								strokeLinejoin='round'
+							>
+								<path stroke='none' d='M0 0h24v24H0z' fill='none' />
+								<path d='M8 9l4 -4l4 4' />
+								<path d='M16 15l-4 4l-4 -4' />
+							</svg>
+						</div>
+					</div>
+				}
+				itemOne={
+					<div className={styles.imageWrapper}>
+						<Image
+							src={beforeSrc}
+							alt={beforeAlt}
+							fill
+							className={styles.image}
+							sizes='(max-width: 768px) 100vw, 50vw'
+						/>
+						<div className={cn(styles.label, styles.labelBefore)}>
+							<Text size='lg' weight='medium'>
+								Визуализация
+							</Text>
+						</div>
+					</div>
+				}
+				itemTwo={
+					<div className={styles.imageWrapper}>
+						<Image
+							src={afterSrc}
+							alt={afterAlt}
+							fill
+							className={styles.image}
+							sizes='(max-width: 768px) 100vw, 50vw'
+						/>
+						<div className={cn(styles.label, styles.labelAfter)}>
+							<Text size='lg' weight='medium'>
+								Фото
+							</Text>
+						</div>
+					</div>
+				}
+				className={styles.slider}
+			/>
+		</div>
+	)
+}
+</file>
+
+<file path="src/lib/constants.ts">
+export const NAV_LINKS = [
+	{ label: 'Главная', href: '/', key: 'index' },
+	{ label: 'Проекты', href: '/projects', key: 'projects' },
+	{ label: 'Услуги', href: '/services', key: 'services' },
+	{ label: 'О студии', href: '/about', key: 'about' },
+	{ label: 'Контакты', href: '/contacts', key: 'contacts' },
+] as const
+</file>
+
+<file path=".husky/pre-commit">
+npm run lint:fix
+</file>
+
+<file path="src/components/layout/Nav/Nav.tsx">
+'use client'
+
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
+import { SplitEffect } from '@/components/ui/SplitEffect/SplitEffect'
+import { Text } from '@/components/ui/Text/Text'
+import { NAV_LINKS } from '@/lib/constants'
+
+import styles from './Nav.module.css'
+
+interface Props {
+	projectsCount: number
+}
+
+export const Nav = ({ projectsCount }: Props) => {
+	const pathname = usePathname()
+
+	return (
+		<nav className={styles.root}>
+			<div className={styles.list}>
+				{NAV_LINKS.map((el) => {
+					const isActive =
+						pathname === el.href || pathname.startsWith(`${el.href}/`)
+
+					return (
+						<Link key={el.key} href={el.href} className={styles.item}>
+							<SplitEffect className={styles.split} isActive={isActive}>
+								<Text as={'span'} size={'lg'} weight={'medium'}>
+									{el.label}
+								</Text>
+								{el.key === 'projects' && projectsCount > 0 && (
+									<Text
+										className={styles.projectsCount}
+										as={'span'}
+										size={'sm'}
+										weight={'medium'}
+									>
+										{projectsCount}
+									</Text>
+								)}
+							</SplitEffect>
+						</Link>
+					)
+				})}
+			</div>
+		</nav>
+	)
+}
+</file>
+
+<file path="src/components/layout/Section/Section.module.css">
+.section {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: fit-content;
+	padding: 0 0.4rem;
+
+	&.wide {
+		padding: 0;
+	}
+}
+</file>
+
+<file path="src/components/sections/home/Intro/Intro.module.css">
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.65rem;
+
+	width: 100%;
+	height: 100vh;
+
+	text-align: center;
+}
+
+.text {
+	position: relative;
+	width: 100%;
+	max-width: 55%;
+	color: var(--c-black);
+}
+
+.ctaLink {
+	background: var(--c-white);
+
+	&:hover {
+		background: var(--c-orange);
+		color: var(--c-white);
+	}
+}
+</file>
+
+<file path="src/components/sections/home/Transformation/Transformation.tsx">
+import { Section } from '@/components/layout/Section/Section'
+import { BeforeAfter } from '@/components/ui/BeforeAfter/BeforeAfter'
+import { Text } from '@/components/ui/Text/Text'
+
+import styles from './Transformation.module.css'
+
+export const Transformation = () => {
+	return (
+		<Section className='wide'>
+			<div className={styles.root}>
+				<Text
+					as={'h2'}
+					size={'5xl'}
+					weight={'medium'}
+					className={styles.heading}
+				>
+					Сравнение
+				</Text>
+				<div className={styles.container}>
+					<BeforeAfter
+						beforeSrc='/images/projects/primorsky/1.jpg'
+						afterSrc='/images/projects/primorsky/2.jpg'
+						className={styles.comparison}
+					/>
+				</div>
+			</div>
+		</Section>
+	)
+}
+</file>
+
+<file path="src/app/(site)/page.tsx">
+import { Metadata } from 'next'
+
+import { Hero } from '@/components/sections/home/Hero/Hero'
+import { Intro } from '@/components/sections/home/Intro/Intro'
+import { Process } from '@/components/sections/home/Process/Process'
+import { Transformation } from '@/components/sections/home/Transformation/Transformation'
+
+export const metadata: Metadata = {
+	title: 'POLE — Авторская студия дизайна',
+	description: 'Какое-то описание',
+}
+
+export default function Home() {
+	return (
+		<>
+			<Hero />
+			<Intro />
+			<Transformation />
+			<Process />
+		</>
+	)
+}
+</file>
+
+<file path="src/components/layout/Nav/Nav.module.css">
+.root {
+	height: 100%;
+}
+
+.list {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	gap: 0.025rem;
+}
+
+.item {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 0.35rem;
+	backdrop-filter: blur(0.3rem);
+	background: var(--c-nav);
+	border-radius: 0.03rem;
+}
+
+.split {
+	color: var(--c-white);
+	text-transform: uppercase;
+}
+
+.projectsCount {
+	color: var(--c-orange);
+}
+</file>
+
+<file path="src/components/sections/home/Transformation/Transformation.module.css">
+.root {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+	padding: 0.02rem;
+
+	width: 100%;
+}
+
+.heading {
+	color: var(--black);
+	text-transform: uppercase;
+	padding: 1rem 0;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+}
+
+.comparison {
+	overflow: hidden;
+	border-radius: 0.04rem;
+}
+</file>
+
+<file path="src/components/ui/BeforeAfter/BeforeAfter.module.css">
+.root {
+	position: relative;
+	overflow: hidden;
+	/* aspect-ratio: 16 / 9; */
+	height: 100%;
+	width: 100%;
+}
+
+.slider {
+	width: 100%;
+	height: 100%;
+}
+
+.imageWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.image {
+	object-fit: cover;
+}
+
+.handle {
+	cursor: col-resize;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+
+	color: var(--white);
+}
+
+.line {
+	width: 0.02rem;
+	height: 100%;
+	background-color: var(--c-beige);
+	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 40px;
+	height: 40px;
+
+	color: var(--color-black);
+
+	background-color: var(--c-orange);
+	border-radius: 50%;
+	box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+
+	transition: transform 0.3s ease;
+
+	svg {
+		rotate: 90deg;
+		stroke: var(--c-beige);
+	}
+}
+
+.handle:active .button {
+	transform: translate(-50%, -50%) scale(0.9);
+}
+
+.label {
+	pointer-events: none;
+
+	position: absolute;
+	top: 0.4rem;
+
+	padding: 0.2rem 0.3rem;
+
+	color: var(--c-white);
+
+	background: var(--c-nav);
+	backdrop-filter: blur(0.3rem);
+	border-radius: 0.04rem;
+}
+
+.labelBefore {
+	left: 0.4rem;
+}
+
+.labelAfter {
+	right: 0.4rem;
+}
+</file>
+
+<file path="src/components/ui/Noise/Noise.module.css">
+.noise {
+	pointer-events: none;
+
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	opacity: 0.05;
+}
+
+.overlay {
+	position: relative;
+	width: 100%;
+	height: 1000%;
+}
+
+.effect {
+	will-change: transform;
+
+	position: absolute;
+	inset: -200%;
+
+	width: 400%;
+	height: 400%;
+
+	opacity: 0.55;
+	background-image: url('/images/noise.png');
+
+	animation: noise-animation 5s steps(6) infinite;
+}
+
+@keyframes noise-animation {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	10% {
+		transform: translate(-5%, -5%);
+	}
+
+	20% {
+		transform: translate(-10%, 5%);
+	}
+
+	30% {
+		transform: translate(5%, -10%);
+	}
+
+	40% {
+		transform: translate(-5%, 15%);
+	}
+
+	50% {
+		transform: translate(-10%, 5%);
+	}
+
+	60% {
+		transform: translate(15%, 0);
+	}
+
+	70% {
+		transform: translate(0, 10%);
+	}
+
+	80% {
+		transform: translate(-15%, 0);
+	}
+
+	90% {
+		transform: translate(10%, 5%);
+	}
+
+	100% {
+		transform: translate(5%, 0);
+	}
+}
+</file>
+
+<file path="src/styles/variables.css">
+:root {
+	--c-black: #111;
+	--c-white: #fff;
+	--c-beige: #f2f1ef;
+	--c-nav: #908c8766;
+	--c-orange: #ff7c08;
+
+	--header-height: 0.7rem;
+	--ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+</file>
+
+<file path="src/components/ui/Text/Text.module.css">
+.root {
+	text-wrap: balance;
+}
+
+.size-xs {
+	font-size: 0.12rem; /* 12px */
+	line-height: 1.4;
+}
+.size-sm {
+	font-size: 0.14rem; /* 14px */
+	line-height: 1.5;
+}
+.size-base {
+	font-size: 0.16rem; /* 16px - дефолт */
+	line-height: 1.6;
+}
+.size-lg {
+	font-size: 0.18rem; /* 18px */
+	line-height: 1.5;
+}
+.size-xl {
+	font-size: 0.2rem; /* 20px */
+	line-height: 1.4;
+}
+.size-xxl {
+	font-size: 0.24rem; /* 24px */
+	line-height: 1.4;
+}
+
+.size-2xl {
+	font-size: 0.28rem;
+	line-height: 1.3;
+}
+.size-3xl {
+	font-size: 0.32rem;
+	line-height: 1.2;
+}
+.size-4xl {
+	font-size: 0.48rem;
+	line-height: 1.1;
+}
+.size-5xl {
+	font-size: 0.64rem;
+	line-height: 0.64rem;
+}
+
+.weight-regular {
+	font-weight: 400;
+}
+.weight-medium {
+	font-weight: 500;
+}
+.weight-semibold {
+	font-weight: 600;
+}
+.weight-bold {
+	font-weight: 700;
+}
+
+.default-color {
+	color: var(--black);
+}
+</file>
+
+<file path="src/app/(site)/layout.tsx">
+import '@/styles/globals.css'
+import '@/styles/variables.css'
+
+import type { Metadata } from 'next'
+import localFont from 'next/font/local'
+
+import { FontScaler } from '@/components/features/FontScaler/FontScaler'
+import { Footer } from '@/components/layout/Footer/Footer'
+import { Header } from '@/components/layout/Header/Header'
+import { Main } from '@/components/layout/Main/Main'
+import { Noise } from '@/components/ui/Noise/Noise'
+import { cn } from '@/lib/cn'
+
+import styles from './layout.module.css'
+
+export const metadata: Metadata = {
+	title: 'Create Next App',
+	description: 'Generated by create next app',
+}
+
+const bounded = localFont({
+	src: '../fonts/Bounded-Variable.ttf',
+	variable: '--font-bounded',
+})
+
+const velaSans = localFont({
+	src: '../fonts/VelaSans-GX.ttf',
+	variable: '--font-vela-sans',
+})
+
+export default function RootLayout({
+	children,
+}: Readonly<{
+	children: React.ReactNode
+}>) {
+	return (
+		<html lang='ru'>
+			<body className={cn(bounded.variable, velaSans.variable)}>
+				<div className={styles.app}>
+					<FontScaler />
+					<Noise />
+					<Header />
+					<Main>{children}</Main>
+					<Footer />
+				</div>
+			</body>
+		</html>
+	)
+}
+</file>
+
+<file path="src/components/layout/Header/Header.tsx">
+import Link from 'next/link'
+
+import Logo from '@/components/icons/logo.svg'
+import { SplitEffect } from '@/components/ui/SplitEffect/SplitEffect'
+import { getProjects } from '@/lib/projects'
+
+import { Nav } from '../Nav/Nav'
+
+import styles from './Header.module.css'
+
+export const Header = async () => {
+	const projects = await getProjects()
+	const projectsCount = projects.length
+
+	return (
+		<header className={styles.root}>
+			<div className={styles.container}>
+				<Link href={'/'} className={styles.logo}>
+					<SplitEffect className={styles.splitWrapper}>
+						<Logo className={styles.icon} />
+					</SplitEffect>
+				</Link>
+				<Nav projectsCount={projectsCount} />
+			</div>
+		</header>
+	)
+}
+</file>
+
+<file path="src/components/sections/home/Hero/Hero.tsx">
+import Image from 'next/image'
+
+import { Section } from '@/components/layout/Section/Section'
+import { Text } from '@/components/ui/Text/Text'
+
+import styles from './Hero.module.css'
+
+export const Hero = () => {
+	return (
+		<Section className={'wide'}>
+			<div className={styles.root}>
+				<div className={styles.background}>
+					<div className={styles.backgroundWrapper}>
+						<Image
+							className={styles.image}
+							src={'/images/hero-background_1.jpg'}
+							alt={'opiuj'}
+							width={2584}
+							height={2530}
+						/>
+					</div>{' '}
+					<div className={styles.backgroundWrapper}>
+						<Image
+							className={styles.image}
+							src={'/images/hero-background_2.jpg'}
+							alt={'opiuj'}
+							width={2532}
+							height={2530}
+						/>
+					</div>
+				</div>
+				<div className={styles.text}>
+					<div className={styles.title}>
+						<Text as={'h1'} weight={'medium'} size={'5xl'}>
+							Авторская студия POLE
+						</Text>
+					</div>
+					<div className={styles.description}>
+						<Text as={'p'} weight={'medium'} size={'3xl'}>
+							Интерьер — это не стены.
+						</Text>
+						<Text as={'p'} weight={'medium'} size={'3xl'}>
+							Это сценарий жизни.
+						</Text>
+					</div>
+				</div>
+			</div>
+		</Section>
+	)
+}
+</file>
+
+<file path="src/components/sections/home/Hero/Hero.module.css">
+.root {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	height: 100vh;
+	position: relative;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	padding: 0.02rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.02rem;
+}
+
+.backgroundWrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 0.04rem;
+	overflow: hidden;
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: 0;
+
+		width: 100%;
+		height: 100%;
+
+		opacity: 0.2;
+
+		background: linear-gradient(#0000 0%, #000 34.9539%);
+	}
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+	object-position: center;
+}
+
+.text {
+	width: 100%;
+	max-width: 49%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	padding: 0 0 0.8rem 0.4rem;
+
+	z-index: 1;
+}
+
+.title {
+	color: var(--c-white);
+	text-transform: uppercase;
+}
+
+.description {
+	color: var(--c-beige);
+}
+</file>
+
+<file path="src/styles/globals.css">
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html {
+	font-feature-settings:
+		'pnum' on,
+		'lnum' on;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
+	text-rendering: optimizelegibility;
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+body {
+	min-height: 100vh;
+	font-family:
+		var(--font-vela-sans),
+		system-ui,
+		-apple-system,
+		sans-serif;
+	line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+	color: inherit;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	cursor: pointer;
+	appearance: auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style: none;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+	font-family: var(--font-bounded), 'Arial Narrow', sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+pre,
+code,
+kbd,
+samp {
+	font-family:
+		ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+		'Courier New', monospace;
+	font-size: 1em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}
+
+:focus-visible {
+	outline: 2px solid currentcolor;
+	outline-offset: 2px;
+}
+</file>
+
+<file path="src/components/layout/Header/Header.module.css">
+.root {
+	position: fixed;
+	height: min-content;
+	width: 100%;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0.4rem;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container {
+	height: var(--header-height);
+	display: flex;
+	gap: 0.025rem;
+}
+
+.logo {
+	background: var(--c-nav);
+	backdrop-filter: blur(0.3rem);
+	height: 100%;
+	padding: 0.12rem;
+	border-radius: 0.03rem;
+}
+
+.splitWrapper {
+	height: 100%;
+}
+
+.icon {
+	height: 100%;
+	width: auto;
+}
+</file>
+
+</files>
