@@ -58,7 +58,7 @@ export const BeforeAfter = ({
 							sizes='(max-width: 768px) 100vw, 50vw'
 						/>
 						<div className={cn(styles.label, styles.labelBefore)}>
-							<Text size='sm' weight='medium'>
+							<Text size='lg' weight='medium'>
 								Визуализация
 							</Text>
 						</div>
@@ -74,7 +74,7 @@ export const BeforeAfter = ({
 							sizes='(max-width: 768px) 100vw, 50vw'
 						/>
 						<div className={cn(styles.label, styles.labelAfter)}>
-							<Text size='sm' weight='medium'>
+							<Text size='lg' weight='medium'>
 								Фото
 							</Text>
 						</div>

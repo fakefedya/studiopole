@@ -1,7 +1,8 @@
 .root {
 	position: relative;
 	overflow: hidden;
-	aspect-ratio: 16 / 9;
+	/* aspect-ratio: 16 / 9; */
+	height: 100%;
 	width: 100%;
 }
 
@@ -34,9 +35,9 @@
 }
 
 .line {
-	width: 2px;
+	width: 0.02rem;
 	height: 100%;
-	background-color: var(--orange);
+	background-color: var(--c-beige);
 	box-shadow: 0 0 10px rgb(0 0 0 / 20%);
 }
 
@@ -55,7 +56,7 @@
 
 	color: var(--color-black);
 
-	background-color: var(--orange);
+	background-color: var(--c-orange);
 	border-radius: 50%;
 	box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
 
@@ -63,6 +64,7 @@
 
 	svg {
 		rotate: 90deg;
+		stroke: var(--c-beige);
 	}
 }
 
@@ -74,21 +76,21 @@
 	pointer-events: none;
 
 	position: absolute;
-	top: 20px;
+	top: 0.4rem;
 
-	padding: 4px 12px;
+	padding: 0.2rem 0.3rem;
 
-	color: white;
+	color: var(--c-white);
 
-	background: rgb(0 0 0 / 50%);
-	backdrop-filter: blur(4px);
-	border-radius: 20px;
+	background: var(--c-nav);
+	backdrop-filter: blur(0.3rem);
+	border-radius: 0.04rem;
 }
 
 .labelBefore {
-	left: 20px;
+	left: 0.4rem;
 }
 
 .labelAfter {
-	right: 20px;
+	right: 0.4rem;
 }

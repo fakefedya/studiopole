@@ -10,17 +10,19 @@ export const Transformation = () => {
 			<div className={styles.root}>
 				<Text
 					as={'h2'}
-					size={'2xl'}
+					size={'5xl'}
 					weight={'medium'}
 					className={styles.heading}
 				>
 					Сравнение
 				</Text>
-				<BeforeAfter
-					beforeSrc='/images/projects/primorsky/1.jpg'
-					afterSrc='/images/projects/primorsky/2.jpg'
-					className={styles.comparison}
-				/>
+				<div className={styles.container}>
+					<BeforeAfter
+						beforeSrc='/images/projects/primorsky/1.jpg'
+						afterSrc='/images/projects/primorsky/2.jpg'
+						className={styles.comparison}
+					/>
+				</div>
 			</div>
 		</Section>
 	)
