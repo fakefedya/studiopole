@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const Noise = ({ isVisible = true }: Props) => {
-	if (!isVisible) return
+	if (!isVisible) return null
 
 	return (
 		<div className={styles.noise}>
